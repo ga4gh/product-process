@@ -103,7 +103,7 @@ The following provide detail on the **correspondingly numbered steps in the prod
 11. Presentation to Steering Committee
     1. The Study group should present their work at the next Steering Committee meeting
     2. The materials generated for the PRC should be shared with the Steering Committee at least two weeks before the meeting
-12. Steering Committee subset/delegates offline ballot following this process:
+12. <a name="subsetstudyballotprocess">Steering Committee subset/delegates offline ballot following this process:</a>
     1. Following the Study group’s presentation to Steering Committee, the Steering Committee will be balloted to determine if the group should proceed to development work
     2. Steering Committee members can:
         1. Choose to cast a vote themselves
@@ -115,7 +115,7 @@ The following provide detail on the **correspondingly numbered steps in the prod
     5. Votes must be cast by (or on behalf of) >50% of Steering Committee members for the outcome to be valid and development work to proceed.
         1. If this is not achieved, Secretariat should work with Steering Committee members to understand the reasons members were unwilling to vote. Secretariat should then present a possible plan of action, two weeks ahead of the next Steering Committee call, which will be put to a vote of Steering Committee members on that call, where Steering Committee members can vote for the plan or for the work to be discontinued.
     6. If approved, a list should be made of all Steering Committee members (or their delegates) who wish to be kept informed of development work.
-13. Steering committee subset/delegates decide if the Problem Statement should be taken through to development using the ballot process described above
+13. Steering committee subset/delegates decide if the Problem Statement should be taken through to development using the ballot process described under [point 12](#subsetstudyballotprocess)
     1. Decision makers: Steering Committee members or their nominees
     2. Criteria:  are [the same as for the PRC](#prcstudycriteria) under point 10
 14. Product development process:
@@ -177,19 +177,19 @@ The following provide detail on the **correspondingly numbered steps in the prod
 19. Development group and Secretariat review in event of PRC withholding approval. They should decide if the work returns to development or if it ceases.
     1. Decision makers: development group and Secretariat. Final decision with Secretariat.
     2. Criteria: Can the reasons that the PRC gave for withholding approval be addressed through further development work? Can a plan of action be clearly established to do this?
-20. Steering Committee subset/delegates offline ballot on content, following this process:
-    3. The Steering Committee will be balloted to determine if the content of the product is acceptable
-    4. Documents generated for the PRC should be shared with Steering Committee
-    5. Steering Committee members can:
+20. <a name="subsetcontentballot">Steering Committee subset/delegates offline ballot on content, following this process:</a>
+    1. The Steering Committee will be balloted to determine if the content of the product is acceptable
+    2. Documents generated for the PRC should be shared with Steering Committee
+    3. Steering Committee members can:
         1. Choose to cast a vote themselves
         2. Ask a nominee (for example a colleague on the same Driver Project with knowledge of the domain) to vote on their behalf
         3. Excuse themselves from the vote if they feel the topic is outwith their expertise
-    6. A simple majority of cast votes determines the outcome. If the outcome is tied, development work goes ahead.
-    7. The ballot closes two weeks after documents have been shared
-    8. Votes must be cast by (or on behalf of) >50% of Steering Committee members for the outcome to be valid and the product to proceed.
+    4. A simple majority of cast votes determines the outcome. If the outcome is tied, development work goes ahead.
+    5. The ballot closes two weeks after documents have been shared
+    6. Votes must be cast by (or on behalf of) >50% of Steering Committee members for the outcome to be valid and the product to proceed.
         1. If this is not achieved, Secretariat should work with Steering Committee members to understand the reasons members were unwilling to vote. Secretariat should then present a possible plan of action, two weeks ahead of the next Steering Committee call, which will be put to a vote of Steering Committee members on that call, where Steering Committee members can vote for the plan or for the work to be discontinued.
-    9. If approved, the product should move to final process approval by Steering Committee.
-21. Steering committee subset/delegates decide if the product is acceptable
+    7. If approved, the product should move to final process approval by Steering Committee.
+21. Steering committee subset/delegates decide if the product is acceptable using the process decribed under [point 20](#subsetcontentballot)
     1. Decision makers: Steering Committee members or their nominees
     2. Criteria:  [are the same as for the PRC under point 17](#prccriteria)
 22. Final presentation to Steering Committee for approval that the product development has followed our process
