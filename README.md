@@ -1,6 +1,6 @@
 # GA4GH product development and approval process documentation
 
-This repo contains documentation relating to the product development and approval processes of the [Global Alliance for Genomics and Health](https://www.ga4gh.org).
+This repo contains documentation relating to the [product development and approval process](product-process.md) of the [Global Alliance for Genomics and Health](https://www.ga4gh.org).
 
 Those wishing to comment on the process are invited to open an issue.
 
