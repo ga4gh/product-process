@@ -18,6 +18,7 @@
 10. Documentation generated for products during product development and approval should give clarity on the points on which decision making is based. It should not be longer than is essential. Reuse, where appropriate, is encouraged.
 11. New versions of existing standards can fast track documentation by using existing documentation and highlighting changes. However, they must still follow the process and principles defined in this document: consultation, clear problem definition, and stakeholder engagement. These are not optional.
 12. Where decisions in the process are with Secretariat, final decision making rests jointly with GA4GH's Chief Executive Officer (CEO) and Chief Standards Officer (CSO). In the event that they disagree, the decision is passed to GA4GH's Executive Committee.
+13. In the event of dispute or uncertainty in this process (caused by lack of clarity in this document or for any other reason), the primary responsibility to resolve the situation rests jointly with GA4GH's CEO and CSO. They should attempt to identify a way forward, which should then be put to the Executive Committee for approval. Anyone wishing to initiate this process should contact the CEO and CSO by email. If Executive Committee choose to, they can consult the full Steering Committee.
 
 
 ![Flowchart](Flowchart.png?raw=true)
