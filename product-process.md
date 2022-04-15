@@ -134,7 +134,7 @@ The following provide detail on the **correspondingly numbered steps in the prod
             1. There should be at least two implementations created by independent groups (i.e. not two implementations created by the same entity for two different projects)
             2. At least one of these implementations should be open
             3. Interoperability of these implementations should have been demonstrated
-            4. In client server models, there should be both two client and two server implementations, operating in different systems
+            4. In client server models (or any two part system, including read and write), there should be both two client and two server implementations, operating in different systems
             5. Work streams do not need to build the implementations. The intention is that these would be built by Driver Projects.
             6. Implementation work should inform the development process
         4. Documented feedback from adopters
