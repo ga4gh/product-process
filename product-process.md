@@ -6,7 +6,7 @@
 
 
 1. GA4GH is an open standards development organisation
-    1. Work should take place in ways that are publicly accessible, inclusive of newcomers, and decision making should be transparent - see Best Practices and Code of Conduct
+    1. Work should take place in ways that are publicly accessible, inclusive of new contributors, and decision making should be transparent - see Best Practices and Code of Conduct
 2. GA4GH products should be developed through **broad consultation and consensus**
 3. GA4GH aims to develop a small number of products that are of broad utility
 4. GA4GH works alongside other standards development organisations in a cooperative manner in whatever way best supports the application of genomics in health and the broader genomics community (including other groups developing standards)
