@@ -17,6 +17,7 @@
 9. GA4GH policies on copyright, intellectual property (IP), and other topics must be observed and should be shared at the start of calls and when onboarding (along with our Best Practises, Code of Conduct, and all relevant documentation)
 10. Documentation generated for products during product development and approval should give clarity on the points on which decision making is based. It should not be longer than is essential. Reuse, where appropriate, is encouraged.
 11. New versions of existing standards can fast track documentation by using existing documentation and highlighting changes. However, they must still follow the process and principles defined in this document: consultation, clear problem definition, and stakeholder engagement. These are not optional.
+12. Where decisions in the process are with Secretariat, final decision making rests jointly with GA4GH's Chief Executive Officer (CEO) and Chief Standards Officer (CSO). In the event that they disagree, the decision is passed to GA4GH's Executive Committee.
 
 
 ![Flowchart](Flowchart.png?raw=true)
@@ -24,7 +25,6 @@
 ## Specific notes
 
 The following provide detail on the **correspondingly numbered steps in the product development and approval process draft v1 flow chart** above.
-
 
 
 1. For products that originated outside of GA4GH (e.g. BED), check if there is any potential conflict with GA4GH policies, for example, relating to IP. Existing IP, or other factors, may prevent GA4GH from being able to adopt a product. 
