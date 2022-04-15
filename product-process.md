@@ -48,7 +48,7 @@ The following provide detail on the **correspondingly numbered steps in the prod
         4. Study group activities include:
             1. Broad outreach effort (work with communications team)
             2. Stakeholder engagement
-            3. Consultation with REWS and Security
+            3. Consultation with Regulatory-Ethics and Security
             4. Consideration of the existing landscape: what products already exist and, if a new product were developed, how would it interoperate?
         5. <a name="basicstudyoutputs">Study group outputs include:</a>
             1. Landscape analysis
@@ -147,16 +147,16 @@ The following provide detail on the **correspondingly numbered steps in the prod
     3. This is also the period when Steering Committee members (or their delegates) are invited to express their views on the product. Those who previously registered interest should be notified directly of the comment period.
     4. The public comment period should be of a minimum of one month.
     5. The PRC should be consulted on when the public comment period should close.
-17. REWS, Security and the PRC review the development outputs, with revisions following public comment
-    1. REWS and Security
-        1. The combined REWS and Security questionnaire should be completed. This can be done in a single meeting with representatives from those work streams who can assist in completing the questionnaire.
+17. Regulatory-Ethics, Security and the PRC review the development outputs, with revisions following public comment
+    1. Regulatory-Ethics and Security
+        1. The combined Regulatory-Ethics and Security questionnaire should be completed. This can be done in a single meeting with representatives from those work streams who can assist in completing the questionnaire.
     2. PRC review
         1. The [outputs listed under point 14](#developmentoutputs). For the implementations, the PRC should be satisfied that interoperation has been demonstrated and that at least two implementations exist, at least one of which is open
     3. Decision makers
-        1. REWS and Security
+        1. Regulatory-Ethics and Security
         2. PRC, with support from Secretariat to provide additional information. The PRC can approve, request minor revisions, major revisions or indicate that they believe there are fundamental flaws with the work.
     4. Criteria
-        1. REWS and security
+        1. Regulatory-Ethics and Security
             1. Does the product meet the standards of ethics and security established by those Work Streams?
         2. <a name="prccriteria">PRC</a> 
             1. Does the delivered product answer the Problem Statement?
@@ -170,9 +170,9 @@ The following provide detail on the **correspondingly numbered steps in the prod
             9. Is the work aligned with wider GA4GH and does it follow the recommendations of TASC?
                 1. This could include using the Data Model Library, data model reuse, complying with namespace conventions, etc
                 2. It is acceptable for the PRC to delegate this aspect of the review
-    5. Meetings between the development leads and the PRC, REWS or Security should be arranged as is helpful to enable discussion and provide clarification - this is particularly useful where changes are requested by the PRC
-18. Following revisions, the PRC, REWS and Security make a decision on the product.
-    1. Decision makers: primarily the PRC, with input from REWS and Security on their reviews. The PRC can approve, withhold approval or, if there has been substantial change since the public comment, ask for the work to undergo another round of public comment
+    5. Meetings between the development leads and the PRC, Regulatory-Ethics or Security should be arranged as is helpful to enable discussion and provide clarification - this is particularly useful where changes are requested by the PRC
+18. Following revisions, the PRC, Regulatory-Ethics and Security make a decision on the product.
+    1. Decision makers: primarily the PRC, with input from Regulatory-Ethics and Security on their reviews. The PRC can approve, withhold approval or, if there has been substantial change since the public comment, ask for the work to undergo another round of public comment
     2. Criteria: [as for the PRC under point 17](#prccriteria). In addition, have there been substantial changes since the last public comment period?
 19. Development group and Secretariat review in event of PRC withholding approval. They should decide if the work returns to development or if it ceases.
     1. Decision makers: development group and Secretariat. Final decision with Secretariat.
