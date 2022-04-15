@@ -46,12 +46,13 @@ The following provide detail on the **correspondingly numbered steps in the prod
         1. The aim is to investigate if a product (of broad utility) is needed, could be developed, and would fulfil a need not met by any existing efforts
         2. Successful exploration of a topic leading to a decision not to proceed is a valid and worthwhile outcome for a Study group
         3. The date of study group formation should be recorded by Secretariat
-        4. Study group activities include:
+        4. The group should identify leads and who is responsible for ensuring key decisions are communicated
+        5. Study group activities include:
             1. Broad outreach effort (work with communications team)
             2. Stakeholder engagement
             3. Consultation with Regulatory-Ethics and Security
             4. Consideration of the existing landscape: what products already exist and, if a new product were developed, how would it interoperate?
-        5. <a name="basicstudyoutputs">Study group outputs include:</a>
+        6. <a name="basicstudyoutputs">Study group outputs include:</a>
             1. Landscape analysis
             2. Use cases (and whose use cases they are)
             3. List of potential adopters who have expressed interest
@@ -121,11 +122,12 @@ The following provide detail on the **correspondingly numbered steps in the prod
     2. Criteria:  are [the same as for the PRC](#prcstudycriteria) under point 10
 14. Product development process:
     1. Work commences on developing a product, as defined by the Problem Statement presented to Steering Committee
-    2. There is further broad communication (beyond existing GA4GH contributors) that the group is being set up (work with comms). This should include contacting specific key stakeholders.
-    3. Those intending to adopt the product, those who have already adopted the product, and Steering Committee members who have registered an interest in the product should be kept informed about work. This should follow Best Practice and should include sharing decisions, in summary format (not full meeting minutes), in a timely manner.
-    4. Development work should be based on real use cases across multiple environments
-    5. For products originating outside of GA4GH, this work may be limited to formalising documents ahead of public comment. That work should, however, align with GA4GH’s working methods.
-    6. <a name="developmentoutputs">Outputs</a>
+    2. The group should identify leads and who is responsible for ensuring key decisions are communicated (possibly the same individuals as before)
+    3. There is further broad communication (beyond existing GA4GH contributors) that the group is being set up (work with comms). This should include contacting specific key stakeholders.
+    4. Those intending to adopt the product, those who have already adopted the product, and Steering Committee members who have registered an interest in the product should be kept informed about work. This should follow Best Practice and should include sharing decisions, in summary format (not full meeting minutes), in a timely manner.
+    5. Development work should be based on real use cases across multiple environments
+    6. For products originating outside of GA4GH, this work may be limited to formalising documents ahead of public comment. That work should, however, align with GA4GH’s working methods.
+    7. <a name="developmentoutputs">Outputs</a>
         1. Decision record documenting the major decisions taken during development and why they were taken
         2. The product specification
         3. Implementations
