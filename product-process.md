@@ -29,18 +29,19 @@ The following provide detail on the **correspondingly numbered steps in the prod
 
 
 1. For products that originated outside of GA4GH (e.g. BED), check if there is any potential conflict with GA4GH policies, for example, relating to IP. Existing IP, or other factors, may prevent GA4GH from being able to adopt a product. 
-    1. Decision makers: the decision should be made jointly by a) those interested in the product, b) Secretariat, and c) experts called on by Secretariat. In the case of disagreement, the final decision is with Secretariat.
-    2. Criteria: is there anything in the history of the product that would make it incompatible with GA4GH policies? (Checklist to be developed by IP group)
-2. Does a group already exist within GA4GH whose interests are closely aligned with this topic? This might be a group that developed a previous version of the product, a broader work stream, or a group formed for some other purpose but whose interests are similar.
-    1. Decision makers: a) those interested in the new topic, b) the leaders of the existing group, and c) Secretariat. In the case of disagreement, the final decision is with Secretariat.
+    1. This is intended to cover cases like BED, where a standard has been established but where, for whatever reason, the maintenance and development of the standard would be aided by that work taking place in GA4GH.
+    2. Decision makers: the decision should be made jointly by a) those interested in the product, b) Secretariat, and c) experts called on by Secretariat. In the case of disagreement, the final decision is with Secretariat.
+    3. Criteria: is there anything in the history of the product that would make it incompatible with GA4GH policies? (Checklist to be developed by IP group)
+2. <a name="group">Does a group already exist within GA4GH whose interests are closely aligned with this topic?</a> This might be a group that developed a previous version of the product, a broader work stream, or a group formed for some other purpose but whose interests are similar.
+    1. Decision makers: a) those interested in the new topic, b) the leaders of the existing group (if any), and c) Secretariat. In the case of disagreement, the final decision is with Secretariat.
     2. Criteria: The decision should consider current group membership (broad and with interests aligned to the product under consideration) and level of activity (that the group be active and engaged). Is there an existing group that is a natural fit with the product or topic being considered, and that has the appropriate knowledge and level of engagement to consider the topic?
 3. Having engaged with an existing group, is there interest in the topic and support for taking the new topic forward for exploration in a study group?
     1. Decision makers: this should be based on a consensus opinion from the existing group, expressed by the group leads.
     2. Criteria: based on immediately and easily available information (without in depth study), does the topic, in the group’s opinion, merit further study? 
-4. In the absence of an existing group that fits the topic well, work with Secretariat to develop an outreach strategy. This should aim to contact individuals or groups likely to have a shared interest. This should extend beyond those already involved in GA4GH and actively seek people in a range of geographic locations and working in different contexts (i.e. research/clinic), to the fullest extent possible.
-5. Has it been possible to form a group to consider forming a study group and, if so, does that group wish to proceed to form a study group on this topic? 
-    1. Decision makers: Secretariat to decide if a suitable group has been formed to consider study group formation. If not, outreach work can continue or the topic can be retired. If a suitable group has been formed (as judged by Secretariat), the group should decide through consensus if a study group should be formed, with the decision voiced by the group’s leaders.
-    2. Criteria: Secretariat should consider the breadth of geographic and domain areas represented in the group. There should be groups from at least two continents represented. More than one organisation, project or platform of a given type should be represented (similar to requiring at least two Driver Projects). If, in the context of the product there are collaborative efforts (i.e. Terra on a Google platform, funded by NIH and built by Broad) those links could be considered as a single entity and efforts made to seek input from additional entities across ecosystems. In deciding to form a study group, the group should consider if, based on immediately and easily available information (without in depth study), does the topic, in the group’s opinion, merit further study?
+4. In the absence of an existing group that fits the topic well, [as defined under point 2](#group), work with Secretariat to develop an <a name="initialoutreach">outreach strategy</a>. This should aim to contact individuals or groups likely to have a shared interest. This should extend beyond those already involved in GA4GH and actively seek people in a range of geographic locations and working in different contexts (i.e. research/clinic), to the fullest extent possible.
+5. Has the outreach strategy under [point 4](#initialoutreach) been successful enough to proceed? Has it been possible to gather an appropriate set of people to consider forming a study group and, if so, do they wish to proceed to form a study group on this topic? 
+    1. Decision makers: Secretariat to decide if a suitable group has been formed to consider study group formation. If not, outreach work can continue or the topic can be retired. If an appropriate set of people have been convened (as judged by Secretariat), those people should decide through consensus if a study group should be formed, with the decision voiced by the group’s leaders.
+    2. Criteria: Secretariat should consider the breadth of geographic and domain areas represented in the group. There should be groups from at least two continents represented. More than one organisation, project or platform of a given type should be represented (similar to requiring at least two Driver Projects). If, in the context of the product there are collaborative efforts (i.e. Terra on a Google platform, funded by NIH and built by Broad) those links could be considered as a single entity and efforts made to seek input from additional entities across ecosystems. In deciding to form a study group, those gathered should consider if, based on immediately and easily available information (without in depth study), the topic merits further study?
 6. Form a study group and establish a Product Review Committee
     1. Study group:
         1. The aim is to investigate if a product (of broad utility) is needed, could be developed, and would fulfil a need not met by any existing efforts
@@ -103,7 +104,7 @@ The following provide detail on the **correspondingly numbered steps in the prod
         7. Is the Problem Statement clearly defined?
         8. Does the content of the Problem Statement make sense?
 11. Presentation to Steering Committee
-    1. The Study group should present their work at the next Steering Committee meeting
+    1. The Study group should present their work at a Steering Committee meeting
     2. The materials generated for the PRC should be shared with the Steering Committee at least two weeks before the meeting
 12. <a name="subsetstudyballotprocess">Steering Committee subset/delegates offline ballot following this process:</a>
     1. Following the Study group’s presentation to Steering Committee, the Steering Committee will be balloted to determine if the group should proceed to development work
@@ -111,7 +112,7 @@ The following provide detail on the **correspondingly numbered steps in the prod
         1. Choose to cast a vote themselves
         2. Ask a nominee to vote on their behalf
             1. For example, a Driver Project Champion might ask a colleague on the same Driver Project with knowledge of the domain
-        3. Excuse themselves from the vote if they feel the topic is outwith their expertise
+        3. Excuse themselves from the vote if they feel the topic is outside their expertise or they have a conflict of interest
     3. A simple majority of cast votes determines the outcome. If the outcome is tied, development work goes ahead.
     4. The ballot closes two weeks after the Steering Committee presentation
     5. Votes must be cast by (or on behalf of) >50% of Steering Committee members for the outcome to be valid and development work to proceed.
