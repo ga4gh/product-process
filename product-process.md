@@ -12,7 +12,7 @@
 4. GA4GH works alongside other standards development organisations in a cooperative manner in whatever way best supports the application of genomics in health and the broader genomics community (including other groups developing standards)
 5. Products should seek to interoperate with existing products (from GA4GH or elsewhere). Members of the Technical Alignment Subcommittee (TASC) are the custodians of technical alignment information and decision making. This information should be consulted throughout development work.
 6. GA4GH should seek to reuse or adopt existing products, from outside GA4GH, where that makes sense
-7. All behaviour should meet our Code of Conduct
+7. All behaviour should meet our [Code of Conduct](https://www.ga4gh.org/wp-content/uploads/GA4GH-Standards-for-Professional-Conduct-22-Jan-2018.pdf)
 8. Groups should follow our Best Practises (or be willing to demonstrate to Steering Committee that their alternative practices are more appropriate)
 9. GA4GH policies on copyright, intellectual property (IP), and other topics must be observed and should be shared at the start of calls and when onboarding (along with our Best Practises, Code of Conduct, and all relevant documentation)
 10. Documentation generated for products during product development and approval should give clarity on the points on which decision making is based. It should not be longer than is essential. Reuse, where appropriate, is encouraged.
