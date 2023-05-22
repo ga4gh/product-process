@@ -188,7 +188,7 @@ The following provide detail on the **correspondingly numbered steps in the prod
         1. Choose to cast a vote themselves
         2. Ask a nominee (for example a colleague on the same Driver Project with knowledge of the domain) to vote on their behalf
         3. Excuse themselves from the vote if they feel the topic is outwith their expertise
-    4. A simple majority of cast votes determines the outcome. If the outcome is tied, development work goes ahead.
+    4. A simple majority of cast votes determines the outcome. If the outcome is tied, the product is considered to be approved and moves to the final Steering Committee process review.
     5. The ballot closes two weeks after documents have been shared
     6. Votes must be cast by (or on behalf of) >50% of Steering Committee members for the outcome to be valid and the product to proceed.
         1. If this is not achieved, Secretariat should work with Steering Committee members to understand the reasons members were unwilling to vote. Secretariat should then present a possible plan of action, two weeks ahead of the next Steering Committee call, which will be put to a vote of Steering Committee members on that call, where Steering Committee members can vote for the plan or for the work to be discontinued.
