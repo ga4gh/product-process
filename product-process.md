@@ -21,14 +21,142 @@
 13. In the event of dispute or uncertainty in this process (caused by lack of clarity in this document or for any other reason), the primary responsibility to resolve the situation rests jointly with GA4GH's CEO and CSO. They should attempt to identify a way forward, which should then be put to the Executive Committee for approval. Anyone wishing to initiate this process should contact the CEO and CSO by email. If Executive Committee choose to, they can consult the full Steering Committee.
 
 
-![Flowchart](Flowchart.png?raw=true)
+```mermaid
+flowchart LR;
+
+%% colours used for the different classes in the diagram
+classDef outsideOriginClass fill:#52b5bc;
+classDef ideaClass fill:#88ddb3;
+classDef issueClass fill:#c388dd;
+classDef updateClass fill:#de4a96;
+classDef decisionClass fill:#efd225;
+classDef detailClass fill:#ee842b;
+classDef actionClass fill:#071ef2,color:#fff;
+classDef stopClass fill:#e31c31;
+classDef approvalClass fill:#2d9717;
+
+%% the starting points
+startOutside([Standard outside<br>of GA4GH]):::outsideOriginClass;
+startIdea([I have an idea<br>for a standard]):::ideaClass;
+startIssue([I have an issue where<br>a standard might help]):::issueClass;
+startUpdate([I want to update an<br>existing GA4GH standard]):::updateClass;
+
+%% consideration of issues for standards starting outside of GA4GH
+startOutside-->importIssuesDecision{IP or other<br>issues?}:::decisionClass;
+importIssuesDecision --- detail1((1)):::detailClass;
+importIssuesDecision -->|yes| resolveImport[Work with Secretariat to see if<br>there is a solution. If not,<br>cannot proceed.]:::actionClass;
+
+%% already an active group?
+activeGroupDecision{Already an<br>active group?}:::decisionClass;
+activeGroupDecision --- detail2((2)):::detailClass;
+importIssuesDecision -->|no| activeGroupDecision;
+startIdea --> activeGroupDecision;
+startIssue --> activeGroupDecision;
+startUpdate --> activeGroupDecision;
+
+%% existing group?
+engageGroup[Engage with existing<br>group]:::actionClass;
+activeGroupDecision -->|yes| engageGroup;
+interestDecision{Interest<br>& support?}:::decisionClass;
+engageGroup --> interestDecision;
+detail3((3)):::detailClass;
+interestDecision --- detail3;
+noInterestStop([Stop]):::stopClass;
+interestDecision -->|no| noInterestStop;
+
+%% if no group, is anyone interested?
+lookForPeople[Look for people with<br>shared interests in a<br>wide variety of<br>contexts]:::actionClass;
+detail4((4)):::detailClass;
+activeGroupDecision -->|no| lookForPeople;
+lookForPeople --- detail4;
+
+enoughPeopleDecision{Continue?}:::decisionClass;
+lookForPeople <--> enoughPeopleDecision;
+detail5((5)):::detailClass;
+enoughPeopleDecision --- detail5;
+noPeopleStop([Stop]):::stopClass;
+enoughPeopleDecision -->|no| noPeopleStop;
+
+%% establishing a study group
+establishStudyGroup[Establish Study Group and set up PRC<br> - Broad outreach effort<br> - Landscape analysis<br> - Stakeholdaer engagment<br> - Use cases<br> - REWS and Security consultation<br> - Problem statement defining scope]:::actionClass;
+interestDecision -->|yes| establishStudyGroup;
+enoughPeopleDecision --->|yes| establishStudyGroup;
+establishStudyGroup --- detail6((6)):::detailClass;
+establishStudyGroup --- detail7((7)):::updateClass;
+establishStudyGroup --- detail8((8)):::outsideOriginClass;
+
+%% does the study group proceed to Steering Committee?
+studyGroupDecision{Continue?}:::decisionClass;
+establishStudyGroup<-->studyGroupDecision;
+studyGroupDecision --- detail9((9)):::detailClass;
+studyGroupNo([Stop]):::stopClass;
+studyGroupDecision -->|no| studyGroupNo;
+studyPrcDecision{PRC<br>supports?}:::decisionClass;
+studyGroupDecision -->|yes| studyPrcDecision;
+studyPrcDecision --- detail10((10)):::detailClass;
+studyGroupPresentation[Study Group presents outputs to SC<br> - Evidence of outreach<br> - Landscape analysis<br> - List of those planning to adopt<br> - Use cases<br> - REWS and Security<br> - Problem statement defining scope]:::actionClass;
+studyPrcDecision --->|yes| studyGroupPresentation;
+studyGroupPresentation --- detail11((11)):::detailClass;
+studyGroupReview[Group reviews]:::actionClass;
+studyPrcDecision -->|no| studyGroupReview --> studyGroupDecision;
+
+%% Steering Committee evaluates Study Group outputs and makes decision
+scReviewsStudy[SC subset/delegates<br>review and offline<br>ballot]:::actionClass;
+studyGroupPresentation --> scReviewsStudy;
+scReviewsStudy --- detail12((12)):::detailClass;
+scReviewsStudy --> scStudyDecision{SC<br>approves?}:::decisionClass;
+scStudyDecision --- detail13((13)):::detailClass;
+scStudyDecision -->|no| scStudyNo([Stop]):::stopClass;
+
+%% moving to product development
+productDev[Product development process<br> - Broad communication of new group<br> - Engage stakeholders/adopters<br> - Development in line with GA4GH Best Practices and Code of Conduct<br> - SC delegates and others who have registered interest are kept informed]:::actionClass;
+scStudyDecision -->|yes| productDev;
+productDev --- detail14((14)):::detailClass;
+productDev <--> continueFromDev{Continue?}:::decisionClass;
+continueFromDev --- detail15((15)):::detailClass;
+continueFromDev -->|no| stopDev([Stop]):::stopClass;
+
+%% comment, review and revisions
+openComment[Open for comment<br> - Publc and Steering<br>Committee comment period]:::actionClass;
+continueFromDev -->|yes| openComment;
+openComment --- detail16((16)):::detailClass;
+openComment --> commentRevisions[Group reviews and<br>revises]:::actionClass;
+commentRevisions --> fullReview[PRC, REWS and<br>Security review]:::actionClass;
+fullReview --- detail17((17)):::detailClass;
+fullReview --> fullReviewRevisions[Group reviews and<br>revises]:::actionClass;
+fullReviewRevisions --> reviewDecision{PRC, REWS<br>and Security<br>approve?<br>Further<br>comment?}:::decisionClass;
+reviewDecision --- detail18((18)):::detailClass;
+reviewDecision -->|Further comment needed| openComment;
+reviewDecision -->|no| groupNegFeedbackContinueDecision{Continue?}:::decisionClass;
+groupNegFeedbackContinueDecision --- detail19((19)):::detailClass;
+groupNegFeedbackContinueDecision -->|no| negFeedbackStop([Stop]):::stopClass;
+groupNegFeedbackContinueDecision --->|yes| productDev;
+
+%% content approval
+productContentReview[SC subset/delegates<br>Content Review and<br>offline ballot]:::actionClass;
+productContentReview --- detail20((20)):::detailClass;
+reviewDecision -->|yes| productContentReview;
+productContentReview --> scContentApprovalDecision{SC subset<br>approves<br>content?}:::decisionClass;
+scContentApprovalDecision --- detail21((21)):::detailClass;
+scContentApprovalDecision -->|no| groupNegFeedbackContinueDecision;
+
+%% process approval
+processReview[Presentation to SC for approval<br> - SC ensure that the<br>development process was<br>followed using the supplied<br>documentation]:::actionClass;
+scContentApprovalDecision -->|yes| processReview;
+processReview --> scProcessApprovalDecision{Full SC<br>approves<br>process?}:::decisionClass;
+scProcessApprovalDecision --- detail22((22)):::detailClass;
+scProcessApprovalDecision ---->|no| groupNegFeedbackContinueDecision;
+postApprovalActions[Work with<br>Communications on<br>outreach and support<br>implementation and<br>adoption]:::actionClass;
+scProcessApprovalDecision -->|yes| postApprovalActions;
+postApprovalActions --> approved([Approval]):::approvalClass;
+```
 
 ## Specific notes
 
 The following provide detail on the **correspondingly numbered steps in the product development and approval process draft v1 flow chart** above.
 
 
-1. For products that originated outside of GA4GH (e.g. BED), check if there is any potential conflict with GA4GH policies, for example, relating to IP. Existing IP, or other factors, may prevent GA4GH from being able to adopt a product. 
+1. For products that originated outside of GA4GH (e.g. BED), check if there is any potential conflict with GA4GH policies, for example, relating to IP. Existing IP, or other factors, may prevent GA4GH from being able to adopt a product.
     1. This is intended to cover cases like BED, where a standard has been established but where, for whatever reason, the maintenance and development of the standard would be aided by that work taking place in GA4GH.
     2. Decision makers: the decision should be made jointly by a) those interested in the product, b) Secretariat, and c) experts called on by Secretariat. In the case of disagreement, the final decision is with Secretariat.
     3. Criteria: is there anything in the history of the product that would make it incompatible with GA4GH policies? (Checklist to be developed by IP group)
@@ -37,9 +165,9 @@ The following provide detail on the **correspondingly numbered steps in the prod
     2. Criteria: The decision should consider current group membership (broad and with interests aligned to the product under consideration) and level of activity (that the group be active and engaged). Is there an existing group that is a natural fit with the product or topic being considered, and that has the appropriate knowledge and level of engagement to consider the topic?
 3. Having engaged with an existing group, is there interest in the topic and support for taking the new topic forward for exploration in a study group?
     1. Decision makers: this should be based on a consensus opinion from the existing group, expressed by the group leads.
-    2. Criteria: based on immediately and easily available information (without in depth study), does the topic, in the group’s opinion, merit further study? 
+    2. Criteria: based on immediately and easily available information (without in depth study), does the topic, in the group’s opinion, merit further study?
 4. In the absence of an existing group that fits the topic well, [as defined under point 2](#group), work with Secretariat to develop an <a name="initialoutreach">outreach strategy</a>. This should aim to contact individuals or groups likely to have a shared interest. This should extend beyond those already involved in GA4GH and actively seek people in a range of geographic locations and working in different contexts (i.e. research/clinic), to the fullest extent possible.
-5. Has the outreach strategy under [point 4](#initialoutreach) been successful enough to proceed? Has it been possible to gather an appropriate set of people to consider forming a study group and, if so, do they wish to proceed to form a study group on this topic? 
+5. Has the outreach strategy under [point 4](#initialoutreach) been successful enough to proceed? Has it been possible to gather an appropriate set of people to consider forming a study group and, if so, do they wish to proceed to form a study group on this topic?
     1. Decision makers: Secretariat to decide if a suitable group has been formed to consider study group formation. If not, outreach work can continue or the topic can be retired. If an appropriate set of people have been convened (as judged by Secretariat), those people should decide through consensus if a study group should be formed, with the decision voiced by the group’s leaders.
     2. Criteria: Secretariat should consider the breadth of geographic and domain areas represented in the group. There should be groups from at least two continents represented. More than one organisation, project or platform of a given type should be represented (similar to requiring at least two Driver Projects). If, in the context of the product there are collaborative efforts (i.e. Terra on a Google platform, funded by NIH and built by Broad) those links could be considered as a single entity and efforts made to seek input from additional entities across ecosystems. In deciding to form a study group, those gathered should consider if, based on immediately and easily available information (without in depth study), the topic merits further study?
 6. Form a study group and establish a Product Review Committee
@@ -95,7 +223,7 @@ The following provide detail on the **correspondingly numbered steps in the prod
         5. If the product is from outside GA4GH or an update to an existing product, a summary of the views of those who adopted the previous version of the product
     2. Decision maker: the PRC (with support from Secretariat to provide additional required information) can choose to support the outputs going forward to Steering Committee or provide comments to the Study group, asking them to review
     3. <a name="prcstudycriteria">Criteria:</a>
-        1. Is there engagement from a varied cross section of the community? 
+        1. Is there engagement from a varied cross section of the community?
         2. Is the problem, as stated, of broad interest and utility?
         3. Is there a need for new work? Could existing products be used effectively?
         4. Have any pre-development interoperation concerns been identified and clearly scoped?
@@ -162,7 +290,7 @@ The following provide detail on the **correspondingly numbered steps in the prod
     4. Criteria
         1. Regulatory-Ethics and Security
             1. Does the product meet the standards of ethics and security established by those Work Streams?
-        2. <a name="prccriteria">PRC</a> 
+        2. <a name="prccriteria">PRC</a>
             1. Does the delivered product answer the Problem Statement?
             2. Is there evidence that the implementations are interoperable?
             3. Have adopters been consulted and their views documented?
