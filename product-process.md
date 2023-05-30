@@ -12,7 +12,7 @@
 4. GA4GH works alongside other standards development organisations in a cooperative manner in whatever way best supports the application of genomics in health and the broader genomics community (including other groups developing standards)
 5. Products should seek to interoperate with existing products (from GA4GH or elsewhere). Members of the Technical Alignment Subcommittee (TASC) are the custodians of technical alignment information and decision making. This information should be consulted throughout development work.
 6. GA4GH should seek to reuse or adopt existing products, from outside GA4GH, where that makes sense
-7. All behaviour should meet our Code of Conduct
+7. Stakeholders are expected to respect the principles set by our Code of Conduct at all times
 8. Groups should follow our Best Practises (or be willing to demonstrate to Steering Committee that their alternative practices are more appropriate)
 9. GA4GH policies on copyright, intellectual property (IP), and other topics must be observed and should be shared at the start of calls and when onboarding (along with our Best Practises, Code of Conduct, and all relevant documentation)
 10. Documentation generated for products during product development and approval should give clarity on the points on which decision making is based. It should not be longer than is essential. Reuse, where appropriate, is encouraged.
@@ -275,10 +275,11 @@ The following provide detail on the **correspondingly numbered steps in the prod
         1. Criteria: Should the work proceed to next steps, continue development or cease? Are the outputs ready for next steps? Is there a clear plan of actionable steps to progress work? Has the work stalled irretrievably? Has it been concluded that the topic should not be pursued?
 16. Open for comment:
     1. Following a decision to proceed, taken by the development group, the development outputs should be made available for public comment. This is the opportunity for everyone to express an opinion on the content of the product.
-    2. The public comment announcement should be circulated widely, including to everyone associated with GA4GH
+    2. The public comment announcement should be circulated widely, including to everyone associated with GA4GH.
     3. This is also the period when Steering Committee members (or their delegates) are invited to express their views on the product. Those who previously registered interest should be notified directly of the comment period.
     4. The public comment period should be of a minimum of one month.
     5. The PRC should be consulted on when the public comment period should close.
+    6. Comments should respect the principles set by our Code of Conduct.
 17. Regulatory-Ethics, Security and the PRC review the development outputs, with revisions following public comment
     1. Regulatory-Ethics and Security
         1. The combined Regulatory-Ethics and Security questionnaire should be completed. This can be done in a single meeting with representatives from those work streams who can assist in completing the questionnaire.
