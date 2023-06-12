@@ -193,7 +193,7 @@ The following provide detail on the **correspondingly numbered steps in the prod
             2. A member of a third, different, Work Stream
             3. A representative of the wider community of adopters, possibly from one of the Driver Projects requiring the product or another adopter
         3. An attempt should be made to have broad representation in the PRC
-        4. Conflicts of interest must be declared
+        4. Conflicts of interest must be declared and satisfactorily addressed by all members, referring to the Code of Conduct as appropriate
         5. The Secretariat should work with the group to identify potential PRC members. In case of disagreement, the Executive Committee will be consulted. Final decision on PRC membership will be with Secretariat.
 7. If the work is considering an update to an existing product:
     1. The Study group must consult existing adopters of the product, obtaining responses from a cross-section of existing adopters
