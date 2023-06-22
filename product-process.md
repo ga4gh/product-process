@@ -179,7 +179,7 @@ The following provide detail on the **correspondingly numbered steps in the prod
         5. Study group activities include:
             1. Broad outreach effort (work with communications team)
             2. Stakeholder engagement
-            3. Consultation with Regulatory-Ethics and Security
+            3. Regulatory-Ethics and Security: initial meeting with representatives of these work streams to complete the combined Regulatory-Ethics and Security questionnaire (noting that it may not be possible to fully complete the questionnaire until later in the development process). Tracking of issues should commence.
             4. Consideration of the existing landscape: what products already exist and, if a new product were developed, how would it interoperate?
         6. <a name="basicstudyoutputs">Study group outputs include:</a>
             1. Landscape analysis
@@ -256,7 +256,8 @@ The following provide detail on the **correspondingly numbered steps in the prod
     4. Those intending to adopt the product, those who have already adopted the product, and Steering Committee members who have registered an interest in the product should be kept informed about work. This should follow Best Practice and should include sharing decisions, in summary format (not full meeting minutes), in a timely manner.
     5. Development work should be based on real use cases across multiple environments
     6. For products originating outside of GA4GH, this work may be limited to formalising documents ahead of public comment. That work should, however, align with GA4GH’s working methods.
-    7. <a name="developmentoutputs">Outputs</a>
+    7. The Regulatory-Ethics and Security combined questionnaire should be revisited, as necessary, as the product develops, continuing to track issues and their resolution.
+    8. <a name="developmentoutputs">Outputs</a>
         1. Decision record documenting the major decisions taken during development and why they were taken
         2. The product specification
         3. Implementations
@@ -282,7 +283,7 @@ The following provide detail on the **correspondingly numbered steps in the prod
     6. Comments should respect the principles set by our Code of Conduct.
 17. Regulatory-Ethics, Security and the PRC review the development outputs, with revisions following public comment
     1. Regulatory-Ethics and Security
-        1. The combined Regulatory-Ethics and Security questionnaire should be completed. This can be done in a single meeting with representatives from those work streams who can assist in completing the questionnaire.
+        1. The combined Regulatory-Ethics and Security questionnaire, and associated issue tracking should be reviewed with representatives of the Regulatory-Ethics and Security work streams. This can include a meeting with those representatives or can done via email, if appropriate.
     2. PRC review
         1. The [outputs listed under point 14](#developmentoutputs). For the implementations, the PRC should be satisfied that interoperation has been demonstrated and that at least two implementations exist, at least one of which is open
     3. Decision makers
