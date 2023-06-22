@@ -19,6 +19,7 @@
 11. New versions of existing standards can fast track documentation by using existing documentation and highlighting changes. However, they must still follow the process and principles defined in this document: consultation, clear problem definition, and stakeholder engagement. These are not optional.
 12. Where decisions in the process are with Secretariat, final decision making rests jointly with GA4GH's Chief Executive Officer (CEO) and Chief Standards Officer (CSO), with decision making support from Secretariat as appropriate. In the event that the CEO and CSO disagree, the decision is passed to GA4GH's Executive Committee.
 13. In the event of dispute or uncertainty in this process (caused by lack of clarity in this document or for any other reason), the primary responsibility to resolve the situation rests jointly with GA4GH's CEO and CSO. They should attempt to identify a way forward, which should then be put to the Executive Committee for approval. Anyone wishing to initiate this process should contact the CEO and CSO by email. If Executive Committee choose to, they can consult the full Steering Committee.
+14. Secretariat are available to provide support and assistance at all stages of the process.
 
 
 ```mermaid
@@ -183,7 +184,7 @@ The following provide detail on the **correspondingly numbered steps in the prod
             4. Consideration of the existing landscape: what products already exist and, if a new product were developed, how would it interoperate?
         6. <a name="basicstudyoutputs">Study group outputs include:</a>
             1. Landscape analysis
-            2. Use cases (and whose use cases they are)
+            2. Use cases with acceptance criteria (and whose use cases they are)
             3. List of potential adopters who have expressed interest
             4. Problem Statement defining the topic and stating what will be in and out of scope
     2. Product Review Committee (PRC)
