@@ -191,12 +191,12 @@ The following provide detail on the **correspondingly numbered steps in the prod
             4. Problem Statement defining the topic and stating what will be in and out of scope
     2. Product Review Committee (PRC)
         1. The PRC exists to provide expert review of the product and to give feedback at some stages of the development process.
-        2.  The PRC should consist of three people with domain knowledge who are not part of development work:
-            1. A leader from one other Work Stream
-            2. A member of a third, different, Work Stream
-            3. A representative of the wider community of adopters, possibly from one of the Driver Projects requiring the product or another adopter
-        3. An attempt should be made to have broad representation in the PRC
-        4. Conflicts of interest must be declared and satisfactorily addressed by all members, referring to applicable GA4GH policies (which might include Code of Conduct, Conflict of Interest and additional documentation)
+        2.  The PRC should consist of three people with appropriate domain knowledge who are not part of development work. Further, the PRC composition should:
+            1. Include at least one person who has been heavily involved in GA4GH for more than a year in another Work Stream. Preference to be given to a leader from another Work Stream, however, suitable Leads can nominate another person, who is not a Work Stream Lead, with appropriate knowledge for this role.
+            2. Include at least one person who does not have close involvement in GA4GH.
+            3. Fill the third and final place on the PRC by considering the other two members of the PRC and seeking to bring balance to the committee. Breadth of representation (including geographic) and representation of users/adopters should be considered. The third place makes no requirement for direct involvement in GA4GH, although someone who is directly involved can fill this role.
+        3. An attempt should be made to have broad representation in the PRC.
+        4. Conflicts of interest must be declared and satisfactorily addressed by all members, referring to applicable GA4GH policies (which might include Code of Conduct, Conflict of Interest and additional documentation).
         5. The Secretariat should work with the group to identify potential PRC members. In case of disagreement, the Executive Committee will be consulted. Final decision on PRC membership will be with Secretariat.
 7. If the work is considering an update to an existing product:
     1. The Study group must consult existing adopters of the product, obtaining responses from a cross-section of existing adopters
