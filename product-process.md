@@ -262,12 +262,13 @@ The following provide detail on the **correspondingly numbered steps in the prod
         1. Decision record documenting the major decisions taken during development and why they were taken
         2. The product specification
         3. Implementations
-            1. There should be at least two implementations created by independent groups (i.e. not two implementations created by the same entity for two different projects)
-            2. At least one of these implementations should be open
-            3. Interoperability of these implementations should have been demonstrated
-            4. In client server models (or any two part system, including read and write), there should be both two client and two server implementations, operating in different systems
+            1. There should be at least two implementations created by independent groups (i.e. not two implementations created by the same entity for two different projects). Ideally, the second implementation would be built from the specification to demonstrate a clear specification.
+            2. At least one of these implementations should be open. This can be a reference implementation and need not be in use for any purpose other than acting as a reference. Implementations produced by the Secretariat Tech Team can be used to fulfil this criteria but no guarantee is made of the Tech Team being able to provide support.
+            3. Interoperability of these implementations should have been demonstrated.
+            4. In client server models (or any two part system, including read and write), there should be both two client and two server implementations, operating in different systems.
             5. Work streams do not need to build the implementations. The intention is that these would be built by Driver Projects.
-            6. Implementation work should inform the development process
+            6. Implementation work should inform the development process.
+            7. In exceptional circumstances, where a second implementation cannot be taken forward and there is strong reason to believe benefits to the community are being blocked, a group can proceed without a second implementation but must clearly present the rationale for this decision. An example where this might apply could be file format compression encoders. In such a case, many decoders could be expected but few anticipating implementing an encoder. As such, it *might* be judged appropriate to move forward with one encoder and two decoders. A decision should be made based on available information and in the best interests of the established user community. This is intended for exceptional circumstances only and is not the appropriate route in most cases.
         4. Documented feedback from adopters
 15. Periodically, the development group should review progress
     1. Decision maker: group consensus expressed by the group leaders
@@ -286,7 +287,7 @@ The following provide detail on the **correspondingly numbered steps in the prod
     1. Regulatory-Ethics and Security
         1. The combined Regulatory-Ethics and Security questionnaire, and associated issue tracking should be reviewed with representatives of the Regulatory-Ethics and Security work streams. This can include a meeting with those representatives or can done via email, if appropriate.
     2. PRC review
-        1. The [outputs listed under point 14](#developmentoutputs). For the implementations, the PRC should be satisfied that interoperation has been demonstrated and that at least two implementations exist, at least one of which is open
+        1. The [outputs listed under point 14](#developmentoutputs). For the implementations, the PRC should be satisfied that interoperation has been demonstrated and that at least two implementations exist, at least one of which is open. If only one implementation is put forward, the PRC should judge if the rationale for that decision is sound and in the best interests of the established user group.
     3. Decision makers
         1. Regulatory-Ethics and Security
         2. PRC, with support from Secretariat to provide additional information. The PRC can approve, request minor revisions, major revisions or indicate that they believe there are fundamental flaws with the work.
