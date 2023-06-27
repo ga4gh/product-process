@@ -218,9 +218,9 @@ The following provide detail on the **correspondingly numbered steps in the prod
 2. <a name="group">Does a group already exist within GA4GH whose interests are closely aligned with this topic?</a> This might be a group that developed a previous version of the product, a broader work stream, or a group formed for some other purpose but whose interests are similar.
     1. Decision makers: a) those interested in the new topic, b) the leaders of the existing group (if any), and c) Secretariat. In the case of disagreement, the final decision is with Secretariat.
     2. Criteria: The decision should consider current group membership (broad and with interests aligned to the product under consideration) and level of activity (that the group be active and engaged). Is there an existing group that is a natural fit with the product or topic being considered, and that has the appropriate knowledge and level of engagement to consider the topic?
-3. Having engaged with an existing group, is there interest in the topic and support for taking the new topic forward?
+3. Having engaged with an existing group, is there interest in the topic and support for taking the new topic forward? Further, if there is support, would this work develop a new standard or update an existing one?
     1. Decision makers: this should be based on a consensus opinion from the existing group, expressed by the group leads.
-    2. Criteria: based on immediately and easily available information (without in depth study), does the topic, in the group’s opinion, merit further work?
+    2. Criteria: based on immediately and easily available information (without in depth study), does the topic, in the group’s opinion, merit further work? Does the group support either commencing study preparatory to a new standard or updating an existing standard?
 4. In the absence of an existing group that fits the topic well, [as defined under point 2](#group), work with Secretariat to develop an <a name="initialoutreach">outreach strategy</a>. This should aim to contact individuals or groups likely to have a shared interest. This should extend beyond those already involved in GA4GH and actively seek people in a range of geographic locations and working in different contexts (i.e. research/clinic), to the fullest extent possible.
 5. Has the outreach strategy under [point 4](#initialoutreach) been successful enough to proceed? Has it been possible to gather an appropriate set of people to consider forming a study group and, if so, do they wish to proceed to form a study group on this topic?
     1. Decision makers: Secretariat to decide if a suitable group has been formed to consider study group formation. If not, outreach work can continue or the topic can be retired. If an appropriate set of people have been convened (as judged by Secretariat), those people should decide through consensus if a study group should be formed, with the decision voiced by the group’s leaders.
@@ -250,13 +250,14 @@ The following provide detail on the **correspondingly numbered steps in the prod
         3. An attempt should be made to have broad representation in the PRC.
         4. Conflicts of interest must be declared and satisfactorily addressed by all members, referring to applicable GA4GH policies (which might include Code of Conduct, Conflict of Interest and additional documentation).
         5. The Secretariat should work with the group to identify potential PRC members. In case of disagreement, the Executive Committee will be consulted. Final decision on PRC membership will be with Secretariat.
-7. If the work is considering an update to an existing product:
+7. If the work is considering an alteration of scope or breaking change to an existing product:
     1. The Study group must consult existing adopters of the product, obtaining responses from a cross-section of existing adopters
     2. The views of existing adopters should form an additional output, [alongside those listed under point 6](#basicstudyoutputs)
-    3. Documentation from previous versions of the product can be reused
+    3. Documentation from previous versions of the product can (and should) be reused
         1. Differences should be highlighted (git diff or similar is acceptable)
         2. A paragraph of text should be supplied explaining why the changes are needed
         3. The previous PRC should be reconvened if at all possible.
+        4. New documentation should be kept to an absolute minimum but should demonstrate why the new work merits attention.
 8. For products that originated outside of GA4GH:
     1. The study group should include consultation with existing adopters in their outputs
     2. The landscape analysis may be brief and focus on existing use of the product
@@ -304,7 +305,7 @@ The following provide detail on the **correspondingly numbered steps in the prod
 13. Steering committee subset/delegates decide if the Problem Statement should be taken through to development using the ballot process described under [point 12](#subsetstudyballotprocess)
     1. Decision makers: Steering Committee members or their nominees
     2. Criteria:  are [the same as for the PRC](#prcstudycriteria) under point 10
-14. Product development process:
+14. <a name="maindev">Product development process</a>:
     1. Work commences on developing a product, as defined by the Problem Statement presented to Steering Committee
     2. The group should identify leads and who is responsible for ensuring key decisions are communicated (possibly the same individuals as before)
     3. There is further broad communication (beyond existing GA4GH contributors) that the group is being set up (work with comms). This should include contacting specific key stakeholders.
@@ -392,3 +393,54 @@ The following provide detail on the **correspondingly numbered steps in the prod
         2. A simple majority is sufficient for approval
         3. In the event of a tie, the product is approved
     3. Criteria: based on the available documentation are members satisfied that the process outlined in this document has been followed and that the process has been open, fair and completed to a good standard?
+23. Where a group supports an update to an existing product, the group should take a decision as to what type of change is being considered.
+    1. Urgent fix: these should be rare but could include bug fixes and time sensitive changes. Examples could include small but significant errors in recently approved documentation, including items that are technically breaking changes. Such changes would be 'in the spirit of' previously approved work and would not alter the scope of the product. Such changes would be justified by it being in the best interests of the community for such bugs to be remedied swiftly. Urgent fixes would result in a patch release.
+    2. Continued development: this would also be 'in the spirit of' the previously approved product. These would exclude breaking changes. Examples could include: trivial fixes, clarifying changes (either where meaning was or was not previously agreed), adding new tags or terms that fit within the existing remit and potentially adding new categories of tags or terms to support a new technology that clearly fits within the existing remit. This case should cover the bulk of maintenance work. Continued development would result in a minor version release.
+    3. Scope or breaking change: where the work is altering the scope of the previously approved product or will lead to breaking changes (which don't meet the urgent criteria), this is the appropriate path. These are changes that would break backwards compatibility, add significant new features and/or take the product in a new direction. Scope or breaking changes would result in a major version release.
+    4. Decision makers: the consensus opinion of the group, using the group's decision making process, and expressed by the leads.
+    5. Criteria: which of the three cases described best fits the current issue?
+24. When a group has concluded that work is needed for an urgent fix, the following should happen:
+    1. The PRC should be notified immediately of the issue and informed that they will shortly be asked to look at a solution.
+    2. The group starts work on a fix (working publicly unless there is a security concern).
+25. Are the PRC and subgroup in agreement on the fix?
+    1. Decision makers: the subgroup, represented by their leads, and the PRC.
+    2. Criteria:
+        1. Do the PRC agree that this is an appropriate use of the urgent fix mechanism?
+        2. Are the subgroup in agreement that the solution is needed and addresses the issue?
+    3. In the event that PRC members are unavailable:
+        1. Two PRC members approving is sufficient
+        2. If only one or no PRC members can respond, approval can be given by the Work Stream Leads for the relevant Work Stream, in place of the PRC. This should be exceptional but is intended to enable speed in recognition of urgent circumstances.
+26. Review of urgent fixes: ideally, the fix is posted for public comment, in parallel with PRC review, for seven days. The PRC and subgroup leads can bypass this if the case is judged to be clear cut and it is felt that delaying for review is detrimental.
+27. The PRC are asked to approve the urgent fix for release as a patch.
+    1. Decision makers: the PRC. If members of the PRC are unavailable, two are sufficient to approve. If only one or no members of the PRC are available, approval can be given by the Work Stream Leads for the relevant Work Stream, in place of the PRC. Work Stream Lead approval should be exceptional but is intended to enable speed in recognition of urgent circumstances.
+    2. Criteria:
+        1. Does this meet the description of an urgent fix?
+        2. Does the proposed solution address the issue?
+        3. Is the solution to the benefit of existing adopters?
+28. For urgent fixes, where agreement cannot be reached, responsibility falls to the subgroup leads, supported by Secretariat, to understand the remaining issues and work to resolve them. Any additional parties who it is believed can assist in this work should be included. All parties should keep in mind the urgency of identifying a workable solution.
+29. Where the group has decided that the 'continued development' path is appropriate, the PRC are asked to review that decision. The group should supply the minimum necessary information to the PRC on the nature of ongoing work.
+    1. Decision makers: the PRC.
+    2. Criteria: does the work described by the group fit with the continued development track? Alternatively, is it likely to break backward compatibility or alter the scope of the product? For products previously released as 'draft' or 'trial', the continued development track may be appropriate even for significant and/or breaking changes.
+    3. Enabling progress:
+        1. In many routine cases, this will be the obvious choice of track for maintenance of existing standards. In these cases, the group can reasonably take work forward while the PRC are being consulted.
+        2. The PRC should be kept up to date on planned work, being informed as soon as possible that continued development work will be taking place.
+        3. Where PRC members are unresponsive, Secretariat should work to understand the nature of the issue preventing a response. Secretariat should also liaise with PRC members regarding their future availability (extended leave, sabbaticals, etc.). Where Secretariat are unable to get a response from a PRC member or a PRC member has made it clear that they will be unavailable, a Work Stream Lead from the given Work Stream may take that PRC member's place in approving the choice of track. Work Stream Leads should not routinely be used. Two PRC members (or substitutes) are sufficient for approval.
+        4. Secretariat should work to support a decision being made on the appropriateness of the choice of track within four weeks of the decision being made to pursue the continued development. This can be extended by a further two weeks if the PRC require clarification from the subgroup on the planned work.
+        5. Presenting future work in chunks and at a high level is encouraged.
+        6. The PRC may give broad sign off for categories of work being taken forward by the group in future as continued development (for example, adding tags or terms to products that use these). Flexibility is granted to PRC members and subgroup leads in managing this but should make sure that both the PRC and subgroup leads are clear about what the PRC consider to be in scope for this track.
+30. Continued development work by the subgroup
+    1. Ongoing consultation with existing adopters and other members of the community is encouraged.
+    2. Regulatory-Ethics and Security should be consulted as necessary if work touches on areas/topics previously flagged during product reviews by those groups.
+    3. Work should be inline with Best Practices.
+    4. Work should continue practices previously established for the product, such as decision records and communicating development to interested parties, as in the [development process](#maindev).
+31. A decision is made by the subgroup to consider a block  of continued development work to be complete and ready for release as a minor version. The group may also decide to discontinue work.
+    1. Decision makers: the subgroup, using their processes, expressed by their leads.
+    2. Criteria: is there a consensus within the group that the continued development work is now satisfactory and makes a good candidate for a minor version release? Is more work needed? Would it be appropriate to suspend or discontinue work?
+32. Public comment is opened on the candidate minor version release and the PRC review in parallel. The public comment and review period lasts for one month.
+    1. During the review and comment period, the subgroup should engage with feedback, making necessary amendments or providing justification for the existing choices.
+33. Following completion of subgroup revisions in response to comment and review, the PRC are asked to approve the updated product as a minior version release.
+    1. Decision makers: the PRC
+    2. Criteria:
+        1. Has there been appropriate consultation? For example: Regulatory-Ethics and Security, existing adopters, platform providers. This may not be necessary and applies only if the changes are such that the PRC believe such consultation would be beneficial. Queries can be resolved via email.
+        2. Are the updates sound and in keeping with the aims of the product?
+        3. Do the updates benefit the community?
