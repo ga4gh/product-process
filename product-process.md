@@ -68,15 +68,11 @@ noInterestStop([Stop]):::stopClass;
 interestDecision -->|no| noInterestStop;
 
 %%existing group is interested
-newStandardDecision{New<br>standard?}:::decisionClass;
-detail23((23)):::detailClass;
-newStandardDecision --- detail23;
-interestDecision -->|yes| newStandardDecision;
-
 typeOfChangeDecision{Type of<br>change?}:::decisionClass;
-newStandardDecision -->|no| typeOfChangeDecision;
-detail24((24)):::updateClass;
-typeOfChangeDecision --- detail24;
+interestDecision -->|support update| typeOfChangeDecision;
+detail23((23)):::updateClass;
+typeOfChangeDecision --- detail23;
+
 
 %% if no group, is anyone interested?
 lookForPeople[Look for people with<br>shared interests in a<br>wide variety of<br>contexts]:::actionClass;
@@ -92,42 +88,43 @@ noPeopleStop([Stop]):::stopClass;
 enoughPeopleDecision -->|no| noPeopleStop;
 
 
+
 %%urgent fix
 urgentFix[Urgent Fix<br> - PRC notified immediately<br> - Group develops a solution]:::actionClass;
 typeOfChangeDecision --->|urgent fix| urgentFix;
-urgentFix --- detail25((25)):::updateClass;
+urgentFix --- detail24((24)):::updateClass;
 urgentFix --> fixAgreementDecision{Agree<br>fix?}:::decisionClass;
 fixAgreementDecision -->|yes| fastTrackReview[Fast Track Review]:::actionClass;
-fixAgreementDecision --- detail26((26)):::updateClass;
-fastTrackReview --- detail27((27)):::updateClass;
+fixAgreementDecision --- detail25((25)):::updateClass;
+fastTrackReview --- detail26((26)):::updateClass;
 fixAgreementDecision -->|no| resolveIssues[Resolve<br>remaining<br>issues]:::actionClass;
-resolveIssues --- detail29((29)):::updateClass;
+resolveIssues --- detail28((28)):::updateClass;
 resolveIssues --> fixAgreementDecision;
 fastTrackApprovalDecision{Approved?}:::decisionClass;
-fastTrackApprovalDecision --- detail28((28)):::updateClass;
+fastTrackApprovalDecision --- detail27((27)):::updateClass;
 fastTrackApprovalDecision -->|yes| fixApproved([Approved]):::approvalClass;
 fastTrackReview --> fastTrackApprovalDecision;
 fastTrackApprovalDecision -->|no| resolveIssues;
 
 %%continued development
 trackApprovedDecision{Track<br>approved?}:::decisionClass;
-trackApprovedDecision --- detail30((30)):::updateClass;
+trackApprovedDecision --- detail29((29)):::updateClass;
 continuedDevelopment[Continued Development]:::actionClass;
-continuedDevelopment --- detail31((31)):::updateClass;
+continuedDevelopment --- detail30((30)):::updateClass;
 typeOfChangeDecision ---->|continued development| trackApprovedDecision;
 trackApprovedDecision -->|yes| continuedDevelopment;
 trackApprovedDecision -->|no| typeOfChangeDecision;
 groupAgreesConDevDecision{Group<br>agrees?}:::decisionClass;
 continuedDevelopment --> groupAgreesConDevDecision;
 groupAgreesConDevDecision -->|no| continuedDevelopment;
-groupAgreesConDevDecision --- detail32((32)):::updateClass;
+groupAgreesConDevDecision --- detail31((31)):::updateClass;
 continuedReview[PRC and Public Review]:::actionClass;
 groupAgreesConDevDecision -->|yes| continuedReview;
 groupAgreesConDevDecision -->|stop| conStop([Stop]):::stopClass;
-continuedReview --- detail33((33)):::updateClass;
+continuedReview --- detail32((32)):::updateClass;
 conDevPRCApproval{PRC<br>approves?}:::decisionClass;
 continuedReview --> conDevPRCApproval;
-conDevPRCApproval --- detail34((34)):::updateClass;
+conDevPRCApproval --- detail33((33)):::updateClass;
 conDevPRCApproval -->|yes| continuedApproved([Approved]):::approvalClass;
 conDevPRCApproval -->|more comment| continuedReview;
 conDevPRCApproval -->|no| continuedDevelopment;
@@ -135,7 +132,7 @@ conDevPRCApproval -->|no| continuedDevelopment;
 
 %% establishing a study group
 establishStudyGroup[Establish Study Group and set up PRC<br> - Broad outreach effort<br> - Landscape analysis<br> - Stakeholdaer engagment<br> - Use cases<br> - REWS and Security consultation<br> - Problem statement defining scope]:::actionClass;
-newStandardDecision -->|yes| establishStudyGroup;
+interestDecision -->|support new standard| establishStudyGroup;
 typeOfChangeDecision --->|scope or breaking| establishStudyGroup;
 enoughPeopleDecision --->|yes| establishStudyGroup;
 establishStudyGroup --- detail6((6)):::detailClass;
@@ -221,9 +218,9 @@ The following provide detail on the **correspondingly numbered steps in the prod
 2. <a name="group">Does a group already exist within GA4GH whose interests are closely aligned with this topic?</a> This might be a group that developed a previous version of the product, a broader work stream, or a group formed for some other purpose but whose interests are similar.
     1. Decision makers: a) those interested in the new topic, b) the leaders of the existing group (if any), and c) Secretariat. In the case of disagreement, the final decision is with Secretariat.
     2. Criteria: The decision should consider current group membership (broad and with interests aligned to the product under consideration) and level of activity (that the group be active and engaged). Is there an existing group that is a natural fit with the product or topic being considered, and that has the appropriate knowledge and level of engagement to consider the topic?
-3. Having engaged with an existing group, is there interest in the topic and support for taking the new topic forward for exploration in a study group?
+3. Having engaged with an existing group, is there interest in the topic and support for taking the new topic forward?
     1. Decision makers: this should be based on a consensus opinion from the existing group, expressed by the group leads.
-    2. Criteria: based on immediately and easily available information (without in depth study), does the topic, in the group’s opinion, merit further study?
+    2. Criteria: based on immediately and easily available information (without in depth study), does the topic, in the group’s opinion, merit further work?
 4. In the absence of an existing group that fits the topic well, [as defined under point 2](#group), work with Secretariat to develop an <a name="initialoutreach">outreach strategy</a>. This should aim to contact individuals or groups likely to have a shared interest. This should extend beyond those already involved in GA4GH and actively seek people in a range of geographic locations and working in different contexts (i.e. research/clinic), to the fullest extent possible.
 5. Has the outreach strategy under [point 4](#initialoutreach) been successful enough to proceed? Has it been possible to gather an appropriate set of people to consider forming a study group and, if so, do they wish to proceed to form a study group on this topic?
     1. Decision makers: Secretariat to decide if a suitable group has been formed to consider study group formation. If not, outreach work can continue or the topic can be retired. If an appropriate set of people have been convened (as judged by Secretariat), those people should decide through consensus if a study group should be formed, with the decision voiced by the group’s leaders.
