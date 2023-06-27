@@ -67,6 +67,17 @@ interestDecision --- detail3;
 noInterestStop([Stop]):::stopClass;
 interestDecision -->|no| noInterestStop;
 
+%%existing group is interested
+newStandardDecision{New<br>standard?}:::decisionClass;
+detail23((23)):::detailClass;
+newStandardDecision --- detail23;
+interestDecision -->|yes| newStandardDecision;
+
+typeOfChangeDecision{Type of<br>change?}:::decisionClass;
+newStandardDecision -->|no| typeOfChangeDecision;
+detail24((24)):::updateClass;
+typeOfChangeDecision --- detail24;
+
 %% if no group, is anyone interested?
 lookForPeople[Look for people with<br>shared interests in a<br>wide variety of<br>contexts]:::actionClass;
 detail4((4)):::detailClass;
@@ -80,13 +91,57 @@ enoughPeopleDecision --- detail5;
 noPeopleStop([Stop]):::stopClass;
 enoughPeopleDecision -->|no| noPeopleStop;
 
+
+%%urgent fix
+urgentFix[Urgent Fix<br> - PRC notified immediately<br> - Group develops a solution]:::actionClass;
+typeOfChangeDecision --->|urgent fix| urgentFix;
+urgentFix --- detail25((25)):::updateClass;
+urgentFix --> fixAgreementDecision{Agree<br>fix?}:::decisionClass;
+fixAgreementDecision -->|yes| fastTrackReview[Fast Track Review]:::actionClass;
+fixAgreementDecision --- detail26((26)):::updateClass;
+fastTrackReview --- detail27((27)):::updateClass;
+fixAgreementDecision -->|no| resolveIssues[Resolve<br>remaining<br>issues]:::actionClass;
+resolveIssues --- detail29((29)):::updateClass;
+resolveIssues --> fixAgreementDecision;
+fastTrackApprovalDecision{Approved?}:::decisionClass;
+fastTrackApprovalDecision --- detail28((28)):::updateClass;
+fastTrackApprovalDecision -->|yes| fixApproved([Approved]):::approvalClass;
+fastTrackReview --> fastTrackApprovalDecision;
+fastTrackApprovalDecision -->|no| resolveIssues;
+
+%%continued development
+trackApprovedDecision{Track<br>approved?}:::decisionClass;
+trackApprovedDecision --- detail30((30)):::updateClass;
+continuedDevelopment[Continued Development]:::actionClass;
+continuedDevelopment --- detail31((31)):::updateClass;
+typeOfChangeDecision ---->|continued development| trackApprovedDecision;
+trackApprovedDecision -->|yes| continuedDevelopment;
+trackApprovedDecision -->|no| typeOfChangeDecision;
+groupAgreesConDevDecision{Group<br>agrees?}:::decisionClass;
+continuedDevelopment --> groupAgreesConDevDecision;
+groupAgreesConDevDecision -->|no| continuedDevelopment;
+groupAgreesConDevDecision --- detail32((32)):::updateClass;
+continuedReview[PRC and Public Review]:::actionClass;
+groupAgreesConDevDecision -->|yes| continuedReview;
+groupAgreesConDevDecision -->|stop| conStop([Stop]):::stopClass;
+continuedReview --- detail33((33)):::updateClass;
+conDevPRCApproval{PRC<br>approves?}:::decisionClass;
+continuedReview --> conDevPRCApproval;
+conDevPRCApproval --- detail34((34)):::updateClass;
+conDevPRCApproval -->|yes| continuedApproved([Approved]):::approvalClass;
+conDevPRCApproval -->|more comment| continuedReview;
+conDevPRCApproval -->|no| continuedDevelopment;
+
+
 %% establishing a study group
 establishStudyGroup[Establish Study Group and set up PRC<br> - Broad outreach effort<br> - Landscape analysis<br> - Stakeholdaer engagment<br> - Use cases<br> - REWS and Security consultation<br> - Problem statement defining scope]:::actionClass;
-interestDecision -->|yes| establishStudyGroup;
+newStandardDecision -->|yes| establishStudyGroup;
+typeOfChangeDecision --->|scope or breaking| establishStudyGroup;
 enoughPeopleDecision --->|yes| establishStudyGroup;
 establishStudyGroup --- detail6((6)):::detailClass;
 establishStudyGroup --- detail7((7)):::updateClass;
 establishStudyGroup --- detail8((8)):::outsideOriginClass;
+
 
 %% does the study group proceed to Steering Committee?
 studyGroupDecision{Continue?}:::decisionClass;
