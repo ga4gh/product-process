@@ -241,6 +241,9 @@ The following provide detail on the **correspondingly numbered steps in the prod
             2. Use cases with acceptance criteria (and whose use cases they are)
             3. List of potential adopters who have expressed interest
             4. Problem Statement defining the topic and stating what will be in and out of scope
+        7. Study groups or phases may point to outputs from other groups (inside or outside of GA4GH), as appropriate. Reuse is strongly encouraged.
+        8. Where there are existing efforts in the area, the study should speak to how they will relate to those efforts (ideally working with them) and also draw in new participants, if there is a lack of broad representation in those existing efforts.
+        9. The outputs of the study need to be sufficient to satisfy the PRC and Steering Committee of the case for working on the product. Where that case will be obvious to those groups, work should be minimal.
     2. Product Review Committee (PRC)
         1. The PRC exists to provide expert review of the product and to give feedback at some stages of the development process.
         2.  The PRC should consist of three people with appropriate domain knowledge who are not part of development work. Further, the PRC composition should:
@@ -287,6 +290,7 @@ The following provide detail on the **correspondingly numbered steps in the prod
         6. Is the Problem Statement in line with GA4GH’s decentralised and federated philosophy, where we avoid centralised infrastructure?
         7. Is the Problem Statement clearly defined?
         8. Does the content of the Problem Statement make sense?
+        9. Is it likely that a product will be adopted? Is it addressing a sufficiently important issue that stakeholders are likely to dedicate resources to development and adoption?
 11. Presentation to Steering Committee
     1. The Study group/phase should present their work at a Steering Committee meeting
     2. The materials generated for the PRC should be shared with the Steering Committee at least two weeks before the meeting
