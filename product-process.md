@@ -18,7 +18,7 @@
 8. Groups should follow our Best Practices (or be willing to demonstrate to Steering Committee that their alternative practices are more appropriate)
 9. GA4GH policies on copyright, intellectual property (IP), and other topics must be observed and should be shared at the start of calls and when onboarding (along with our Best Practices, Code of Conduct, and all relevant documentation)
 10. Documentation generated for products during product development and approval should give clarity on the points on which decision making is based. It should not be longer than is essential. Reuse, where appropriate, is encouraged.
-11. New versions of existing standards can fast track documentation by using existing documentation and highlighting changes. However, they must still follow the process and principles defined in this document: consultation, clear problem definition, and stakeholder engagement. These are not optional.
+11. New versions of existing products can fast track documentation by using existing documentation and highlighting changes. However, they must still follow the process and principles defined in this document: consultation, clear problem definition, and stakeholder engagement. These are not optional.
 12. Where decisions in the process are with Secretariat, final decision making rests jointly with GA4GH's Chief Executive Officer (CEO) and Chief Standards Officer (CSO), with decision making support from Secretariat as appropriate. In the event that the CEO and CSO disagree, the decision is passed to GA4GH's Executive Committee.
 13. In the event of dispute or uncertainty in this process (caused by lack of clarity in this document or for any other reason), the primary responsibility to resolve the situation rests jointly with GA4GH's CEO and CSO. They should attempt to identify a way forward, which should then be put to the Executive Committee for approval. Anyone wishing to initiate this process should contact the CEO and CSO by email. If Executive Committee choose to, they can consult the full Steering Committee.
 14. Secretariat are available to provide support and assistance at all stages of the process.
@@ -39,12 +39,12 @@ classDef stopClass fill:#e31c31;
 classDef approvalClass fill:#2d9717;
 
 %% the starting points
-startOutside([Standard outside<br>of GA4GH]):::outsideOriginClass;
-startIdea([I have an idea<br>for a standard]):::ideaClass;
-startIssue([I have an issue where<br>a standard might help]):::issueClass;
-startUpdate([I want to update an<br>existing GA4GH standard]):::updateClass;
+startOutside([Product outside<br>of GA4GH]):::outsideOriginClass;
+startIdea([I have an idea<br>for a product]):::ideaClass;
+startIssue([I have an issue where<br>a product might help]):::issueClass;
+startUpdate([I want to update an<br>existing GA4GH product]):::updateClass;
 
-%% consideration of issues for standards starting outside of GA4GH
+%% consideration of issues for products starting outside of GA4GH
 startOutside-->importIssuesDecision{IP or other<br>issues?}:::decisionClass;
 importIssuesDecision --- detail1((1)):::detailClass;
 importIssuesDecision -->|yes| resolveImport[Work with Secretariat to see if<br>there is a solution. If not,<br>cannot proceed.]:::actionClass;
@@ -132,7 +132,7 @@ conDevPRCApproval -->|no| continuedDevelopment;
 
 %% establishing a study group/phase
 establishStudyGroup[Establish Study Group/Phase and set up PRC<br> - Broad outreach effort<br> - Landscape analysis<br> - Stakeholder engagement<br> - Use cases<br> - REWS and Security consultation<br> - Problem statement defining scope]:::actionClass;
-interestDecision -->|support new standard| establishStudyGroup;
+interestDecision -->|support new product| establishStudyGroup;
 typeOfChangeDecision --->|scope or breaking| establishStudyGroup;
 enoughPeopleDecision --->|yes| establishStudyGroup;
 establishStudyGroup --- detail6((6)):::detailClass;
@@ -212,15 +212,15 @@ The following provide detail on the **correspondingly numbered steps in the prod
 
 
 1. For products that originated outside of GA4GH (e.g. BED), check if there is any potential conflict with GA4GH policies, for example, relating to IP. Existing IP, or other factors, may prevent GA4GH from being able to adopt a product.
-    1. Products that originated outside of GA4GH is intended to cover cases like BED, where a standard has been established but where, for whatever reason, the maintenance and development of the standard would be aided by that work taking place in GA4GH.
+    1. Products that originated outside of GA4GH is intended to cover cases like BED, where a product has been established but where, for whatever reason, the maintenance and development of the product would be aided by that work taking place in GA4GH.
     2. Decision makers: the decision should be made jointly by a) those interested in the product, b) Secretariat, and c) experts called on by Secretariat. In the case of disagreement, the final decision is with Secretariat.
     3. Criteria: is there anything in the history of the product that would make it incompatible with GA4GH policies? This could be incompatibility with the IP policy, ethical frameworks or some other consideration. (Checklists can be developed by relevant groups to aid review but those making the decision should be cognisant that checklists cannot be exhaustive for all circumstances and that active consideration of issues beyond any checklists is required)
 2. <a name="group">Does a group already exist within GA4GH whose interests are closely aligned with this topic?</a> This might be a group that developed a previous version of the product, a broader work stream, or a group formed for some other purpose but whose interests are similar.
     1. Decision makers: a) those interested in the new topic, b) the leaders of the existing group (if any), and c) Secretariat. In the case of disagreement, the final decision is with Secretariat.
     2. Criteria: The decision should consider current group membership (broad and with interests aligned to the product under consideration) and level of activity (that the group be active and engaged). Is there an existing group that is a natural fit with the product or topic being considered, and that has the appropriate knowledge and level of engagement to consider the topic?
-3. Having engaged with an existing group, is there interest in the topic and support for taking the new topic forward? Further, if there is support, would this work develop a new standard or update an existing one? For a new standard, is there interest in the group entering a Study phase or forming a new Study group to look at the topic?
+3. Having engaged with an existing group, is there interest in the topic and support for taking the new topic forward? Further, if there is support, would this work develop a new product or update an existing one? For a new product, is there interest in the group entering a Study phase or forming a new Study group to look at the topic?
     1. Decision makers: this should be based on a consensus opinion from the existing group, expressed by the group leads.
-    2. Criteria: based on immediately and easily available information (without in depth study), does the topic, in the group’s opinion, merit further work? Does the group support either commencing study preparatory to a new standard or updating an existing standard?
+    2. Criteria: based on immediately and easily available information (without in depth study), does the topic, in the group’s opinion, merit further work? Does the group support either commencing study preparatory to a new product or updating an existing product?
 4. In the absence of an existing group that fits the topic well, [as defined under point 2](#group), work with Secretariat to develop an <a name="initialoutreach">outreach strategy</a>. This should aim to contact individuals or groups likely to have a shared interest. This should extend beyond those already involved in GA4GH and actively seek people in a range of geographic locations and working in different contexts (i.e. research/clinic), to the fullest extent possible.
 5. Has the outreach strategy under [point 4](#initialoutreach) been successful enough to proceed? Has it been possible to gather an appropriate set of people to consider forming a study group and, if so, do they wish to proceed to form a study group on this topic?
     1. Decision makers: Secretariat to decide if a suitable group has been formed to consider study group formation. If not, outreach work can continue or the topic can be retired. If an appropriate set of people have been convened (as judged by Secretariat), those people should decide through consensus if a study group should be formed, with the decision voiced by the group’s leaders.
@@ -266,7 +266,7 @@ The following provide detail on the **correspondingly numbered steps in the prod
     2. The landscape analysis may be brief and focus on existing use of the product
     3. The group should state if the intention is to consolidate or further develop the product. This should be made clear in the Problem Statement.
     4. Existing documentation can be used in the initial submission to the PRC ([point 10](#prcstudyreview)) assuming it is aligned with the requirements of GA4GH processes and provides the necessary information required by the PRC.
-    5. Documentation can be kept to a minimum but should be clear on the utility of the standard (which may be obvious) and why it should be adopted by GA4GH.
+    5. Documentation can be kept to a minimum but should be clear on the utility of the product (which may be obvious) and why it should be adopted by GA4GH.
 9. Periodically, the study group/phase should review progress
     1. Decision maker: group consensus expressed by the group leaders.
     2. Criteria: is the study group/phase satisfied that the outputs are ready to proceed to the next steps of the process? Does the study group/phase feel that more work is required? Does the study group/phase feel that work should cease? The group should consider if the outputs are sufficient to clearly demonstrate to those not closely involved in the work that the decision making criteria have been met. If work has stalled, can the group determine actions likely to remove the block?
@@ -329,6 +329,9 @@ The following provide detail on the **correspondingly numbered steps in the prod
             6. Implementation work should inform the development process.
             7. In exceptional circumstances, where a second implementation cannot be taken forward and there is strong reason to believe benefits to the community are being blocked, a group can proceed without a second implementation but must clearly present the rationale for this decision. An example where this might apply could be file format compression encoders. In such a case, many decoders could be expected but few anticipating implementing an encoder. As such, it *might* be judged appropriate to move forward with one encoder and two decoders. A decision should be made based on available information and in the best interests of the established user community. This is intended for exceptional circumstances only and is not the appropriate route in most cases.
         4. Documented feedback from adopters
+        5. A roadmap for taking the product forward from approval to adoption, identifying future work to support adoption.
+            1. Examples of such activities could include: working with key stakeholders to support adoption, addressing specific blocks to adoption, developing documentation, outreach efforts, demonstrations of utility of the product and more.
+            2. We should acknowledge that adoption should be driven by the community choosing freely but should seek to remove impediments obstructing adoption, making adoption as accessible as possible.
 15. Periodically, the development group should review progress
     1. Decision maker: group consensus expressed by the group leaders
     2. Criteria: is the development group satisfied that the outputs are ready to proceed to the next steps of the process? Does the development group feel that more work is required? Does the development group feel that work should cease? The group should consider if the outputs are sufficient to clearly demonstrate to those not closely involved in the work that the decision making criteria have been met. If work has stalled, can the group determine actions likely to remove the block?
@@ -365,6 +368,7 @@ The following provide detail on the **correspondingly numbered steps in the prod
             9. Is the work aligned with wider GA4GH and does it follow the recommendations of TASC?
                 1. This could include using the Data Model Library, data model reuse, complying with namespace conventions, etc
                 2. It is acceptable for the PRC to delegate this aspect of the review
+            10. Has thought been given to enabling adoption of the product? Has a roadmap for progressing from approval to adoption been provided? Will that roadmap lower barriers to adoption of the product and make adoption accessible to the community (while leaving members of the community free to make their own decisions on adoption)?
     5. Meetings between the development leads and the PRC, Regulatory-Ethics or Security should be arranged as is helpful to enable discussion and provide clarification - this is particularly useful where changes are requested by the PRC
 18. Following revisions, the PRC, Regulatory-Ethics and Security make a decision on the product.
     1. Decision makers: primarily the PRC, with input from Regulatory-Ethics and Security on their reviews. The PRC can approve, withhold approval or, if there has been substantial change since the public comment, ask for the work to undergo another round of public comment
@@ -426,7 +430,7 @@ The following provide detail on the **correspondingly numbered steps in the prod
     1. Decision makers: the PRC.
     2. Criteria: does the work described by the group fit with the continued development track? Alternatively, is it likely to break backward compatibility or alter the scope of the product? For products previously released as 'draft' or 'trial', the continued development track may be appropriate even for significant and/or breaking changes.
     3. Enabling progress:
-        1. In many routine cases, this will be the obvious choice of track for maintenance of existing standards. In these cases, the group can reasonably take work forward while the PRC are being consulted.
+        1. In many routine cases, this will be the obvious choice of track for maintenance of existing products. In these cases, the group can reasonably take work forward while the PRC are being consulted.
         2. The PRC should be kept up to date on planned work, being informed as soon as possible that continued development work will be taking place.
         3. Where PRC members are unresponsive, Secretariat should work to understand the nature of the issue preventing a response. Secretariat should also liaise with PRC members regarding their future availability (extended leave, sabbaticals, etc.). Where Secretariat are unable to get a response from a PRC member or a PRC member has made it clear that they will be unavailable, a Work Stream Lead from the given Work Stream may take that PRC member's place in approving the choice of track. Work Stream Leads should not routinely be used. Two PRC members (or substitutes) are sufficient for approval.
         4. Secretariat should work to support a decision being made on the appropriateness of the choice of track within four weeks of the decision being made to pursue the continued development. This can be extended by a further two weeks if the PRC require clarification from the subgroup on the planned work.
