@@ -6,7 +6,7 @@
 
 
 1. GA4GH is an open standards development organisation
-    1. Work should take place in ways that are publicly accessible, inclusive of new contributors, and decision making should be transparent - see Best Practices and Code of Conduct
+    1. Work should take place in ways that are publicly accessible, inclusive of new contributors, and decision making should be transparent - see [Best Practices](https://airtable.com/shrVFQLOe4vCuGJ03/tblqXtIv1f6ORfoFR) and [Code of Conduct](https://www.ga4gh.org/code-of-conduct/)
     2. To learn more about GA4GH's mission, please see our [website](https://www.ga4gh.org) and [2013 White Paper](https://www.ga4gh.org/document/white-paper/).
     3. For background on open standards, please see the [OpenStand principles](https://open-stand.org/about-us/principles/) and [Open Source Initiative criteria](https://opensource.org/osr/).
 2. GA4GH products should be developed through **broad consultation and consensus**
@@ -14,9 +14,9 @@
 4. GA4GH works alongside other standards development organisations in a cooperative manner in whatever way best supports the application of genomics in health and the broader genomics community (including other groups developing standards)
 5. Products should seek to interoperate with existing products (from GA4GH or elsewhere). Members of the Technical Alignment Subcommittee (TASC) are the custodians of technical alignment information and decision making. This information should be consulted throughout development work.
 6. GA4GH should seek to reuse or adopt existing products, from outside GA4GH, where that makes sense
-7. Stakeholders are expected to respect the principles set by our Code of Conduct at all times
-8. Groups should follow our Best Practices (or be willing to demonstrate to Steering Committee that their alternative practices are more appropriate)
-9. GA4GH policies on copyright, intellectual property (IP), and other topics must be observed and should be shared at the start of calls and when onboarding (along with our Best Practices, Code of Conduct, and all relevant documentation)
+7. Stakeholders are expected to respect the principles set by our [Code of Conduct](https://www.ga4gh.org/code-of-conduct/) at all times
+8. Groups should follow our [Best Practices](https://airtable.com/shrVFQLOe4vCuGJ03/tblqXtIv1f6ORfoFR) (or be willing to demonstrate to Steering Committee that their alternative practices are more appropriate)
+9. GA4GH policies on copyright, intellectual property (IP), and other topics must be observed and should be shared at the start of calls and when onboarding (along with our [Best Practices](https://airtable.com/shrVFQLOe4vCuGJ03/tblqXtIv1f6ORfoFR), [Code of Conduct](https://www.ga4gh.org/code-of-conduct/), and all relevant documentation)
 10. Documentation generated for products during product development and approval should give clarity on the points on which decision making is based. It should not be longer than is essential. Reuse, where appropriate, is encouraged.
 11. New versions of existing products can fast track documentation by using existing documentation and highlighting changes. However, they must still follow the process and principles defined in this document: consultation, clear problem definition, and stakeholder engagement. These are not optional.
 12. Where decisions in the process are with Secretariat, final decision making rests jointly with GA4GH's Chief Executive Officer (CEO) and Chief Standards Officer (CSO), with decision making support from Secretariat as appropriate. In the event that the CEO and CSO disagree, the decision is passed to GA4GH's Executive Committee.
