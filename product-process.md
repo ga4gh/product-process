@@ -1,4 +1,4 @@
-# Product development and approval process - 2022 revision, main process draft v1 for comment
+# Product development and approval process - 2022/23 revisions, main process draft v2 for process approval
 
 
 ## Principles
@@ -208,7 +208,7 @@ postApprovalActions --> approved([Approval]):::approvalClass;
 
 ## Specific notes
 
-The following provide detail on the **correspondingly numbered steps in the product development and approval process draft v1 flow chart** above.
+The following provide detail on the **correspondingly numbered steps in the product development and approval process flow chart** above.
 
 
 1. For products that originated outside of GA4GH (e.g. BED), check if there is any potential conflict with GA4GH policies, for example, relating to IP. Existing IP, or other factors, may prevent GA4GH from being able to adopt a product.
