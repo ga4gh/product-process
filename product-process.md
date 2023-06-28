@@ -21,7 +21,8 @@
 11. New versions of existing products can fast track documentation by using existing documentation and highlighting changes. However, they must still follow the process and principles defined in this document: consultation, clear problem definition, and stakeholder engagement. These are not optional.
 12. Where decisions in the process are with Secretariat, final decision making rests jointly with GA4GH's Chief Executive Officer (CEO) and Chief Standards Officer (CSO), with decision making support from Secretariat as appropriate. In the event that the CEO and CSO disagree, the decision is passed to GA4GH's Executive Committee.
 13. In the event of dispute or uncertainty in this process (caused by lack of clarity in this document or for any other reason), the primary responsibility to resolve the situation rests jointly with GA4GH's CEO and CSO. They should attempt to identify a way forward, which should then be put to the Executive Committee for approval. Anyone wishing to initiate this process should contact the CEO and CSO by email. If Executive Committee choose to, they can consult the full Steering Committee.
-14. Secretariat are available to provide support and assistance at all stages of the process.
+14. In the event that an individual or group wish to dispute a decision in this process, they may use the dispute resolution mechanism above.
+15. Secretariat are available to provide support and assistance at all stages of the process.
 
 
 ```mermaid
@@ -152,8 +153,7 @@ studyPrcDecision --- detail10((10)):::detailClass;
 studyGroupPresentation[Study Group/Phase presents outputs to SC<br> - Evidence of outreach<br> - Landscape analysis<br> - List of those planning to adopt<br> - Use cases<br> - REWS and Security<br> - Problem statement defining scope]:::actionClass;
 studyPrcDecision --->|yes| studyGroupPresentation;
 studyGroupPresentation --- detail11((11)):::detailClass;
-studyGroupReview[Group reviews]:::actionClass;
-studyPrcDecision -->|no| studyGroupReview --> studyGroupDecision;
+studyPrcDecision -->|no| studyGroupDecision;
 
 %% Steering Committee evaluates Study Group/Phase outputs and makes decision
 scReviewsStudy[SC subset/delegates<br>review and offline<br>ballot]:::actionClass;
@@ -161,7 +161,7 @@ studyGroupPresentation --> scReviewsStudy;
 scReviewsStudy --- detail12((12)):::detailClass;
 scReviewsStudy --> scStudyDecision{SC<br>approves?}:::decisionClass;
 scStudyDecision --- detail13((13)):::detailClass;
-scStudyDecision -->|no| scStudyNo([Stop]):::stopClass;
+scStudyDecision -->|no| studyGroupDecision;
 
 %% moving to product development
 productDev[Product development process<br> - Broad communication of new group<br> - Engage stakeholders/adopters<br> - Development in line with GA4GH Best Practices and Code of Conduct<br> - SC delegates and others who have registered interest are kept informed]:::actionClass;
@@ -273,6 +273,7 @@ The following provide detail on the **correspondingly numbered steps in the prod
     3. For groups that have run for over a year as a Study group/phase, Secretariat will initiate a meeting between the group leadership and the PRC. This is repeated annually for the duration of the study group/phase.
         1. Decision maker: PRC, Study group/phase, and Secretariat jointly. Final decision with Secretariat in event of disagreement.
         2. Criteria: Should the work proceed to next steps, continue as a study group/phase or cease? Are the outputs ready for next steps? Is there a clear plan of actionable steps to progress work? Has the work stalled irretrievably? Has it been concluded that the topic should not be pursued?
+    4. For groups where work has been rejected by the PRC or Steering Committee, the group should consider the feedback they have received throughout their work, any feedback received on the presented outputs and judge if further work should be attempted or if work should cease. The group may seek input from others to assist their decision making. If a given product accumulates a further (second) rejection on presenting a revised version at the same stage (at either the PRC or Steering Committee votes), work should cease and not proceed to development (unless the group leads can present a compelling case to the Executive Committee).
 10. <a name="prcstudyreview">The PRC reviews the outputs from the study group/phase.</a>
     1. Outputs to be reviewed include:
         1. Landscape analysis
@@ -301,11 +302,12 @@ The following provide detail on the **correspondingly numbered steps in the prod
         2. Ask a nominee to vote on their behalf
             1. For example, a Driver Project Champion might ask a colleague on the same Driver Project with knowledge of the domain
         3. Excuse themselves from the vote if they feel the topic is outside their expertise or they have a conflict of interest
-    3. A simple majority of cast votes determines the outcome. If the outcome is tied, development work goes ahead.
+    3. Of the cast votes, at least 60% must support progression for development work to proceed.
     4. The ballot closes two weeks after the Steering Committee presentation
     5. Votes must be cast by (or on behalf of) >50% of Steering Committee members for the outcome to be valid and development work to proceed.
         1. If this is not achieved, Secretariat should work with Steering Committee members to understand the reasons members were unwilling to vote. Secretariat should then present a possible plan of action, two weeks ahead of the next Steering Committee call, which will be put to a vote of Steering Committee members on that call, where Steering Committee members can vote for the plan or for the work to be discontinued.
     6. If approved, a list should be made of all Steering Committee members (or their delegates) who wish to be kept informed of development work.
+    7. The voting form should include space for a short amount of feedback (allowing those casting votes to express a reason for their decision, irrespective of if that is for or against the proposed product).
 13. Steering committee subset/delegates decide if the Problem Statement should be taken through to development using the ballot process described under [point 12](#subsetstudyballotprocess)
     1. Decision makers: Steering Committee members or their nominees
     2. Criteria:  are [the same as for the PRC](#prcstudycriteria) under point 10
@@ -373,9 +375,10 @@ The following provide detail on the **correspondingly numbered steps in the prod
 18. Following revisions, the PRC, Regulatory-Ethics and Security make a decision on the product.
     1. Decision makers: primarily the PRC, with input from Regulatory-Ethics and Security on their reviews. The PRC can approve, withhold approval or, if there has been substantial change since the public comment, ask for the work to undergo another round of public comment
     2. Criteria: [as for the PRC under point 17](#prccriteria). In addition, have there been substantial changes since the last public comment period?
-19. Development group and Secretariat review in event of PRC withholding approval. They should decide if the work returns to development or if it ceases.
-    1. Decision makers: development group and Secretariat. Final decision with Secretariat.
-    2. Criteria: Can the reasons that the PRC gave for withholding approval be addressed through further development work? Can a plan of action be clearly established to do this?
+19. Development group and Secretariat review in event of PRC or Steering Committee withholding approval. They should decide if the work returns to development or if it ceases.
+    1. The group should consider the feedback they have received throughout their work, any feedback received on the presented outputs and judge if further work should be attempted or if work should cease. The group may seek input from others to assist their decision making. If a given product accumulates a further (second) rejection on presenting a revised version at the same stage (at either the PRC or Steering Committee votes), work should cease (unless the group leads can present a compelling case to the Executive Committee).
+    2. Decision makers: development group and Secretariat. Final decision with Secretariat.
+    3. Criteria: Can the issues that prevented approval by the PRC or Steering Committee be addressed through further development work? Can a plan of action be clearly established to do this?
 20. <a name="subsetcontentballot">Steering Committee subset/delegates offline ballot on content, following this process:</a>
     1. The Steering Committee will be balloted to determine if the content of the product is acceptable
     2. Documents generated for the PRC should be shared with Steering Committee
@@ -383,11 +386,12 @@ The following provide detail on the **correspondingly numbered steps in the prod
         1. Choose to cast a vote themselves
         2. Ask a nominee (for example a colleague on the same Driver Project with knowledge of the domain) to vote on their behalf
         3. Excuse themselves from the vote if they feel the topic is outwith their expertise
-    4. A simple majority of cast votes determines the outcome. If the outcome is tied, the product is considered to be approved and moves to the final Steering Committee process review.
+    4. Of the cast votes, at least 60% must support progression for the product to be approved and move to the final Steering Committee process review.
     5. The ballot closes two weeks after documents have been shared
     6. Votes must be cast by (or on behalf of) >50% of Steering Committee members for the outcome to be valid and the product to proceed.
         1. If this is not achieved, Secretariat should work with Steering Committee members to understand the reasons members were unwilling to vote. Secretariat should then present a possible plan of action, two weeks ahead of the next Steering Committee call, which will be put to a vote of Steering Committee members on that call, where Steering Committee members can vote for the plan or for the work to be discontinued.
     7. If approved, the product should move to final process approval by Steering Committee.
+    8. The voting form should include space for a short amount of feedback (allowing those casting votes to express a reason for their decision, irrespective of if that is for or against the proposed product).
 21. Steering committee subset/delegates decide if the product is acceptable using the process decribed under [point 20](#subsetcontentballot)
     1. Decision makers: Steering Committee members or their nominees
     2. Criteria:  [are the same as for the PRC under point 17](#prccriteria)
@@ -398,8 +402,8 @@ The following provide detail on the **correspondingly numbered steps in the prod
         3. Evidence that those who registered interest in the product were kept informed
     2. Decisions makers: Steering committee members
         1. Members on the call can abstain or vote to approve or reject
-        2. A simple majority is sufficient for approval
-        3. In the event of a tie, the product is approved
+        2. Of the cast votes, at least 60% must support approval for the product to be approved
+        3. Votes must be cast by >50% of Steering Committee members for the outcome to be valid and the product to be approved.
     3. Criteria: based on the available documentation are members satisfied that the process outlined in this document has been followed and that the process has been open, fair and completed to a good standard?
 23. Where a group supports an update to an existing product, the group should take a decision as to what type of change is being considered.
     1. Urgent fix: these should be relatively rare but could include bug fixes and time sensitive changes. Examples could include small but significant errors in recently approved documentation, including items that are technically breaking changes. Such changes would be 'in the spirit of' previously approved work and would not alter the scope of the product. Such changes would be justified by it being in the best interests of the community for such bugs to be remedied swiftly. Urgent fixes would result in a patch release.
