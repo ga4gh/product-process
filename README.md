@@ -6,4 +6,4 @@ Those wishing to comment on the process are invited to open an issue.
 
 As of April 2022, this process was a draft, which was open for comment.
 
-As of June 2023, revisions have been undertaken, which will be presented to the GA4GH Steering Committee.
+As of June 2023, revisions were undertaken. These were approved by the GA4GH Steering Committee on 17th July 2023.
