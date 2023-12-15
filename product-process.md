@@ -239,7 +239,7 @@ The following provide detail on the **correspondingly numbered steps in the prod
 
     2.2 **Criteria**: The decision should consider current group membership (that it be broad and with interests aligned to the product under consideration) and level of activity (that the group be active and engaged). Is there an existing group that is a natural fit with the product or topic being considered, and that has the appropriate knowledge and level of engagement to consider the topic?
 
- 3. Having engaged with an existing group, is there interest in the topic and support for taking the new topic forward? Further, if there is support, would this work develop a new product (would proceed to [point 6](#pointsix)) or update an existing one (would proceed to [point 23](https://ga4gh-brochure.edit.sanger.ac.uk/our-products/development-and-approval-process/#point23))? For a new product, is there interest in the group entering a study phase or forming a new Study Group to look at the topic?
+ 3. Having engaged with an existing group, is there interest in the topic and support for taking the new topic forward? Further, if there is support, would this work develop a new product (would proceed to [point 6](#point-six)) or update an existing one (would proceed to [point 23](https://ga4gh-brochure.edit.sanger.ac.uk/our-products/development-and-approval-process/#point23))? For a new product, is there interest in the group entering a study phase or forming a new Study Group to look at the topic?
 
 
     3.1 **Decision-makers**: this should be based on a consensus opinion from the existing group, expressed by the group leads.
@@ -262,7 +262,7 @@ The following provide detail on the **correspondingly numbered steps in the prod
 
 **_Navigation summary: Once GA4GH staff and interested individuals agree to launch a Study Group/phase, the individuals prepare several outputs, including a landscape analysis and a list of use cases. A Product Review Committee determines whether to send the outputs to the GA4GH Standards Steering Committee, which votes on whether to start product development._**
 
-6. <a name="#pointsix">The Study Group/phase commences, including by establishing a Product Review Committee.</a>
+6. <a name="#point-six">The Study Group/phase commences, including by establishing a Product Review Committee.</a>
 
     6.1 Study Group/phase:
 
