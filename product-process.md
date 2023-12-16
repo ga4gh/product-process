@@ -231,7 +231,7 @@ The following provide detail on the **correspondingly numbered steps in the prod
 
     1.3 **Criteria**: is there anything in the history of the product that would make it incompatible with GA4GH policies? This could be incompatibility with the IP policy, ethical frameworks, or some other consideration. (Checklists can be developed by relevant groups to aid review, but those making the decision should be cognisant that checklists cannot be exhaustive for all circumstances and that active consideration of issues beyond any checklists is required.)
 
- 2. Does a group already exist within GA4GH with interests closely aligned to this topic? This might be a group that developed a previous version of the product, a broader Work Stream, or a group formed for some other purpose but whose interests are similar.
+ 2. <a name="#pointtwo">Does a group already exist within GA4GH with interests closely aligned to this topic?</a> This might be a group that developed a previous version of the product, a broader Work Stream, or a group formed for some other purpose but whose interests are similar.
 
 
     2.1 **Decision-makers**: a) those interested in the new topic, b) the leaders of the existing group (if any), and c) GA4GH staff: in the case of disagreement, the final decision is with GA4GH staff.
@@ -239,7 +239,7 @@ The following provide detail on the **correspondingly numbered steps in the prod
 
     2.2 **Criteria**: The decision should consider current group membership (that it be broad and with interests aligned to the product under consideration) and level of activity (that the group be active and engaged). Is there an existing group that is a natural fit with the product or topic being considered, and that has the appropriate knowledge and level of engagement to consider the topic?
 
- 3. Having engaged with an existing group, is there interest in the topic and support for taking the new topic forward? Further, if there is support, would this work develop a new product (would proceed to [point 6](#point-six)) or update an existing one (would proceed to [point 23](https://ga4gh-brochure.edit.sanger.ac.uk/our-products/development-and-approval-process/#point23))? For a new product, is there interest in the group entering a study phase or forming a new Study Group to look at the topic?
+ 3. Having engaged with an existing group, is there interest in the topic and support for taking the new topic forward? Further, if there is support, would this work develop a new product (would proceed to [point 6](#pointsix)) or update an existing one (would proceed to [point 23](#pointtwentythree))? For a new product, is there interest in the group entering a study phase or forming a new Study Group to look at the topic?
 
 
     3.1 **Decision-makers**: this should be based on a consensus opinion from the existing group, expressed by the group leads.
@@ -247,9 +247,9 @@ The following provide detail on the **correspondingly numbered steps in the prod
 
     3.2 **Criteria**: based on immediately and easily available information (without in-depth study), does the topic, in the group’s opinion, merit further work? Does the group support either commencing study preparatory to a new product or updating an existing product?
 
- 4. In the absence of an existing group that fits the topic well, as defined under [point 2](https://www.ga4gh.org/our-products/development-and-approval-process/#point2), the group should work with GA4GH staff to develop an outreach strategy. This should aim to contact individuals or groups likely to have a shared interest. This should extend beyond those already involved in GA4GH and actively seek people in a range of geographic locations and working in different contexts (i.e. research, clinic), to the fullest extent possible.
+ 4. <a name="#pointfour">In the absence of an existing group that fits the topic well</a>, as defined under [point 2](#pointtwo), the group should work with GA4GH staff to develop an outreach strategy. This should aim to contact individuals or groups likely to have a shared interest. This should extend beyond those already involved in GA4GH and actively seek people in a range of geographic locations and working in different contexts (i.e. research, clinic), to the fullest extent possible.
 
-5. Has the outreach strategy under [point 4](https://www.ga4gh.org/our-products/development-and-approval-process/#point4) been successful enough to proceed? Has it been possible to gather an appropriate set of people to consider forming a Study Group and, if so, do they wish to proceed to form a Study Group on this topic?
+5. Has the outreach strategy under [point 4](#pointfour) been successful enough to proceed? Has it been possible to gather an appropriate set of people to consider forming a Study Group and, if so, do they wish to proceed to form a Study Group on this topic?
 
 
     5.1 **Decision-makers**: GA4GH staff will decide if a suitable group has been formed to consider Study Group formation. If not, outreach work can continue, or the topic can be retired. If an appropriate set of people has been convened (as judged by GA4GH staff), those people should decide through consensus if a Study Group should be formed, with the decision voiced by the group’s leaders.
@@ -262,7 +262,7 @@ The following provide detail on the **correspondingly numbered steps in the prod
 
 **_Navigation summary: Once GA4GH staff and interested individuals agree to launch a Study Group/phase, the individuals prepare several outputs, including a landscape analysis and a list of use cases. A Product Review Committee determines whether to send the outputs to the GA4GH Standards Steering Committee, which votes on whether to start product development._**
 
-6. <a name="#point-six">The Study Group/phase commences, including by establishing a Product Review Committee.</a>
+6. <a name="#pointsix">The Study Group/phase commences, including by establishing a Product Review Committee.</a>
 
     6.1 Study Group/phase:
 
@@ -353,7 +353,7 @@ The following provide detail on the **correspondingly numbered steps in the prod
     7.1 The Study Group/phase must consult existing adopters of the product, obtaining responses from a cross-section of existing adopters.
 
 
-    7.2 The views of existing adopters should form an additional output, alongside those listed under [point 6](https://www.ga4gh.org/our-products/development-and-approval-process/#point6).
+    7.2 The views of existing adopters should form an additional output, alongside those listed under [point 6](#pointsix).
 
 
     7.3 Documentation from previous versions of the product can (and should) be reused.
@@ -382,7 +382,7 @@ The following provide detail on the **correspondingly numbered steps in the prod
     8.3 The group should state if the intention is to consolidate or further develop the product. This should be made clear in the Problem Statement.
 
 
-    8.4 Existing documentation can be used in the initial submission to the PRC ([point 10](https://www.ga4gh.org/our-products/development-and-approval-process/#point10)), assuming it is aligned with the requirements of GA4GH processes and provides the necessary information required by the PRC.
+    8.4 Existing documentation can be used in the initial submission to the PRC ([point 10](#pointten)), assuming it is aligned with the requirements of GA4GH processes and provides the necessary information required by the PRC.
 
 
     8.5 Documentation can be kept to a minimum but should be clear on the utility of the product (which may be obvious) and why it should be adopted by GA4GH.
@@ -407,7 +407,7 @@ The following provide detail on the **correspondingly numbered steps in the prod
 
     9.4 For groups where work has been rejected by the PRC or SSC, the group should consider the feedback they have received throughout their work, as well as any feedback received on the presented outputs, and judge if further work should be attempted or if work should cease. The group may seek input from others to assist their decision-making. If a given product accumulates a further (second) rejection on presenting a revised version at the same stage (at either the PRC or SSC votes), work should cease and not proceed to development (unless the group leads can present a compelling case to the Executive Committee).
 
-10. The PRC reviews the outputs from the Study Group/phase.
+10. <a name="#pointten">The PRC reviews the outputs from the Study Group/phase.</a>
 
 
     10.1 Outputs to be reviewed include:
@@ -468,7 +468,7 @@ The following provide detail on the **correspondingly numbered steps in the prod
 
    11.2 The materials generated for the PRC should be shared with the SSC at least two weeks before the meeting.
 
- 12. The SSC subset/delegates offline ballot follows this process:
+ 12. <a name="#pointtwelve">The SSC subset/delegates offline ballot follows this process:</a>
 
 
    12.1 Following the Study Group/phase’s presentation to SSC, the SSC will be balloted to determine if the group should proceed to development work.
@@ -506,20 +506,20 @@ The following provide detail on the **correspondingly numbered steps in the prod
 
    12.7 The voting form should include space for a short amount of feedback (allowing those casting votes to express a reason for their decision, irrespective of if that is for or against the proposed product).
 
- 13. SSC subset/delegates decide if the Problem Statement should be taken through to development using the ballot process described under [point 12](https://www.ga4gh.org/our-products/development-and-approval-process/#point12).
+ 13. <a name="#pointthirteen">SSC subset/delegates decide if the Problem Statement should be taken through to development<a/> using the ballot process described under [point 12](#pointtwelve).
 
 
    13.1 **Decision-makers**: SSC members or their nominees
 
 
-   13.2 **Criteria**: same as for the PRC under [point 10](https://www.ga4gh.org/our-products/development-and-approval-process/#point10)
+   13.2 **Criteria**: same as for the PRC under [point 10](#pointten)
 
 
 ## Development
 
 **_Navigation summary: The group begins developing the product in line with the approved Problem Statement. Product group members develop several outputs: a decision record, the specification, documented implementations, documented feedback from adopters, and a road map. They periodically review progress, working with the same Product Review Committee if necessary._**
 
-14. The product development process is:
+14. <a name="#pointfourteen">The product development process is:</a>
 
 
     14.1 Work commences on developing a product, as defined by the Problem Statement presented to the SSC.
@@ -587,7 +587,7 @@ The following provide detail on the **correspondingly numbered steps in the prod
 
     14.8.5.2 We should acknowledge that adoption should be driven by the community choosing freely, but should seek to remove impediments obstructing adoption, making adoption as accessible as possible.
 
- 15. Periodically, the development group should review progress.
+ 15. <a name="#pointfifteen">Periodically, the development group should review progress.</a>
 
 
    15.1 **Decision-makers**: group consensus expressed by the group leaders
@@ -629,72 +629,72 @@ The following provide detail on the **correspondingly numbered steps in the prod
 
     16.6 Comments should respect the principles set by our **[Code of Ethics and Community Conduct](https://ga4gh.org/code-of-conduct/)**.
 
-17. Regulatory & Ethics, Data Security, and the PRC review the development outputs, after revisions following public comment.
+<a name="#pointseventeen">17. Regulatory & Ethics, Data Security, and the PRC review the development outputs, after revisions following public comment.</a>
 
 
-    17.1 Regulatory & Ethics and Data Security
+   17.1 Regulatory & Ethics and Data Security
 
 
-    17.1.1 The combined Regulatory & Ethics and Data Security questionnaire, and associated issue tracking, should be reviewed with representatives of the Regulatory & Ethics and Data Security Work Streams. This can include a meeting with those representatives or can be done via email, if appropriate.
+   17.1.1 The combined Regulatory & Ethics and Data Security questionnaire, and associated issue tracking, should be reviewed with representatives of the Regulatory & Ethics and Data Security Work Streams. This can include a meeting with those representatives or can be done via email, if appropriate.
 
 
-    17.2 PRC review
+   17.2 PRC review
 
 
-    17.2.1 The PRC should review the outputs listed under [point 14](https://www.ga4gh.org/our-products/development-and-approval-process/#point14). For the implementations, the PRC should be satisfied that interoperation has been demonstrated and that at least two implementations exist, at least one of which is open. If only one implementation is put forward, the PRC should judge if the rationale for that decision is sound and in the best interests of the established user group.
+   17.2.1 The PRC should review the outputs listed under [point 14](#pointfourteen). For the implementations, the PRC should be satisfied that interoperation has been demonstrated and that at least two implementations exist, at least one of which is open. If only one implementation is put forward, the PRC should judge if the rationale for that decision is sound and in the best interests of the established user group.
 
 
-    17.3 **Decision-makers**
+   17.3 **Decision-makers**
 
 
-    17.3.1 Regulatory & Ethics and Data Security
+   17.3.1 Regulatory & Ethics and Data Security
 
 
-    17.3.2 PRC, with support from GA4GH staff to provide additional information — the PRC can approve, request minor revisions, request major revisions, or indicate that it believes there are fundamental flaws with the work.
+   17.3.2 PRC, with support from GA4GH staff to provide additional information — the PRC can approve, request minor revisions, request major revisions, or indicate that it believes there are fundamental flaws with the work.
 
 
-    17.4 Criteria
+   17.4 Criteria
 
 
-    17.4.1 Regulatory & Ethics and Data Security
+   17.4.1 Regulatory & Ethics and Data Security
 
 
-    17.4.1.1 Does the product meet the standards of ethics and security established by those Work Streams?
+   17.4.1.1 Does the product meet the standards of ethics and security established by those Work Streams?
 
 
-    17.4.2 PRC
+   17.4.2 PRC
 
 
-    17.4.2.1 Does the delivered product answer the Problem Statement?
+   17.4.2.1 Does the delivered product answer the Problem Statement?
 
 
-    17.4.2.2 Is there evidence that the implementations are interoperable?
+   17.4.2.2 Is there evidence that the implementations are interoperable?
 
 
-    17.4.2.3 Have adopters been consulted and their views documented?
+   17.4.2.3 Have adopters been consulted and their views documented?
 
 
-    17.4.2.4 Is it clear what use cases the product serves?
+   17.4.2.4 Is it clear what use cases the product serves?
 
 
-    17.4.2.5 Have issues of interoperability with other GA4GH products or products outside of GA4GH been addressed?
+   17.4.2.5 Have issues of interoperability with other GA4GH products or products outside of GA4GH been addressed?
 
 
-    17.4.2.6 Is this a product of broad utility?
+   17.4.2.6 Is this a product of broad utility?
 
 
-    17.4.2.7 Is the decision-making reasonable?
+   17.4.2.7 Is the decision-making reasonable?
 
 
-    17.4.2.8 Is there anything, in the reviewers’ expert opinion, that is a concern?
+   17.4.2.8 Is there anything, in the reviewers’ expert opinion, that is a concern?
 
 
-    17.4.2.9 Is the work aligned with the wider GA4GH, and does it follow the recommendations of TASC?
+   17.4.2.9 Is the work aligned with the wider GA4GH, and does it follow the recommendations of TASC?
 
 
 
-      * This could include using the Data Model Library, data model reuse, complying with namespace conventions, etc.
-      * It is acceptable for the PRC to delegate this aspect of the review.
+   * This could include using the Data Model Library, data model reuse, complying with namespace conventions, etc.
+   * It is acceptable for the PRC to delegate this aspect of the review.
 
   17.4.2.10 Has thought been given to enabling adoption of the product? Has a road map for progressing from approval to adoption been provided? Will that road map lower barriers to adoption of the product and make adoption accessible to the community (while leaving members of the community free to make their own decisions on adoption)?
 
@@ -708,7 +708,7 @@ The following provide detail on the **correspondingly numbered steps in the prod
       18.1 **Decision-makers**: primarily the PRC, with input from Regulatory & Ethics and Data Security on their reviews — the PRC can approve, withhold approval, or, if there has been substantial change since the public comment, ask for the work to undergo another round of public comment.
 
 
-      18.2 **Criteria**: as for the PRC under [point 17](https://www.ga4gh.org/our-products/development-and-approval-process/#point17), and in addition, have there been substantial changes since the last public comment period?
+      18.2 **Criteria**: as for the PRC under [point 17](#pointseventeen), and in addition, have there been substantial changes since the last public comment period?
 
  19. Development group and GA4GH staff review in event of PRC or SSC withholding approval. They should decide if the work returns to development or if it ceases.
 
@@ -721,7 +721,7 @@ The following provide detail on the **correspondingly numbered steps in the prod
 
       19.3 Criteria: Can the issues that prevented approval by the PRC or SSC be addressed through further development work? Can a plan of action be clearly established to do this?
 
- 20. SSC subset/delegates offline ballot on content, following this process:
+ 20. <a name="#pointtwenty">SSC subset/delegates offline ballot on content, following this process:</a>
 
 
       20.1 The SSC will be balloted to determine if the content of the product is acceptable.
@@ -759,13 +759,13 @@ The following provide detail on the **correspondingly numbered steps in the prod
 
      20.8 The voting form should include space for a short amount of feedback (allowing those casting votes to express a reason for their decision, irrespective of if that is for or against the proposed product).
 
-21. SSC subset/delegates decide if the product is acceptable using the process described under [point 20](https://www.ga4gh.org/our-products/development-and-approval-process/#point20).
+21. SSC subset/delegates decide if the product is acceptable using the process described under [point 20](#point20).
 
 
     21.1 **Decision-makers**: SSC members or their nominees
 
 
-    21.2 **Criteria**: same as for the PRC under [point 17](https://www.ga4gh.org/our-products/development-and-approval-process/#point17)
+    21.2 **Criteria**: same as for the PRC under [point 17](#pointseventeen)
 
 22. Final presentation to SSC for approval that the product development has followed this Product Development and Approval Process
 
@@ -773,7 +773,7 @@ The following provide detail on the **correspondingly numbered steps in the prod
     22.1 The following should be shared with SSC at least two weeks before the call where a vote is scheduled:
 
 
-    22.1.1 outputs listed under [point 10](https://www.ga4gh.org/our-products/development-and-approval-process/#point10) and under [point 14](https://www.ga4gh.org/our-products/development-and-approval-process/#point14)
+    22.1.1 outputs listed under [point 10](#pointten) and under [point 14](#pointfourteen)
 
 
     22.1.2 evidence of outreach
@@ -801,7 +801,7 @@ The following provide detail on the **correspondingly numbered steps in the prod
 
 **_Navigation summary: When a product group (also known as a Work Stream subgroup) identifies a necessary update to an existing product, they can take one of three paths. “Urgent fix” leads to a patch release. “Continued development” leads to a minor version release. “Scope or breaking change” leads to a major version release (which requires a return to [point 6](https://www.ga4gh.org/our-products/development-and-approval-process/#point6)). The group works with the same Product Review Committee to validate the choice of path and provide review and approval._**
 
-23. When a product group/subgroup supports an update to an existing product, the group should take a decision as to what type of change is being considered.
+23. <a name="#pointtwentythree">When a product group/subgroup supports an update to an existing product, the group should take a decision as to what type of change is being considered.</a>
 
 
     23.1 Urgent fix: these should be relatively rare but could include bug fixes and time-sensitive changes. Examples could include small but significant errors in recently approved documentation, including items that are technically breaking changes. Such changes would be “in the spirit of” previously approved work and would not alter the scope of the product. Such changes would be justified by it being in the best interests of the community for such bugs to be remedied swiftly. Urgent fixes would result in a patch release.
@@ -810,13 +810,13 @@ The following provide detail on the **correspondingly numbered steps in the prod
     23.2 Continued development: this would also be “in the spirit of” the previously approved product. These would exclude breaking changes. Examples could include: trivial fixes, clarifying changes (where meaning either was or was not previously agreed), adding new tags or terms that fit within the existing remit, and potentially adding new categories of tags or terms to support a new technology that clearly fits within the existing remit. This case should cover the bulk of maintenance work. Continued development would result in a minor version release.
 
 
-    23.3 Scope or breaking change: where the work is altering the scope of the previously approved product or will lead to breaking changes (which don’t meet the urgent criteria), this is the appropriate path. These are changes that would break backwards compatibility, add significant new features, and/or take the product in a new direction. Scope or breaking changes would result in a major version release. (Return to [point 6](https://www.ga4gh.org/our-products/development-and-approval-process/#point3).)
+    23.3 Scope or breaking change: where the work is altering the scope of the previously approved product or will lead to breaking changes (which don’t meet the urgent criteria), this is the appropriate path. These are changes that would break backwards compatibility, add significant new features, and/or take the product in a new direction. Scope or breaking changes would result in a major version release. (Return to [point 6](#pointsix).)
 
 
     23.4 **Decision-makers**: the consensus opinion of the group, using the group’s decision-making process, and expressed by the leads
 
 
-    23.5 **Criteria**: which of the three cases described best fits the current issue? For a scope or breaking change, is the group interested in moving to a Study phase (explained in [points 6](https://www.ga4gh.org/our-products/development-and-approval-process/#point6) to [13](https://www.ga4gh.org/our-products/development-and-approval-process/#point13)) to explore the proposed topic? Is there broad consensus?
+    23.5 **Criteria**: which of the three cases described best fits the current issue? For a scope or breaking change, is the group interested in moving to a Study phase (explained in [points 6](#pointsix) to [13](#pointthirteen)) to explore the proposed topic? Is there broad consensus?
 
 24. When a group has concluded that work is needed for an urgent fix, the following should happen:
 
@@ -911,7 +911,7 @@ The following provide detail on the **correspondingly numbered steps in the prod
       30.3 Work should be in line with Best Practices.
 
 
-      30.4 Work should continue practices previously established for the product, such as decision records and communicating development to interested parties, as in the development process ([points 14](https://www.ga4gh.org/our-products/development-and-approval-process/#point14) to [15](https://www.ga4gh.org/our-products/development-and-approval-process/#point15)).
+      30.4 Work should continue practices previously established for the product, such as decision records and communicating development to interested parties, as in the development process ([points 14](#pointfourteen) to [15](#pointfifteen)).
 
 
       30.5 There should be broad consensus in support of change.
